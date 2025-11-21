@@ -26,7 +26,6 @@
 
 body {
     max-width: 1920px;
-    margin: auto;
 }
 
 header .wrapper {
@@ -38,16 +37,19 @@ header .wrapper {
 }
 
 .wrapper {
-    margin: 0 360px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 nav {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 a {
     text-decoration: none;
+    color: black;
     font-family: GeistRegular;
     font-size: 16px;
 }
@@ -74,7 +76,6 @@ p {
 #login-link,
 #signup-link,
 #wishlist-create-link  {
-    color: black;
     padding: 15px 30px;
     border-radius: 50px;
 }
@@ -109,6 +110,95 @@ p {
     flex-direction: column;
     align-items: center;
     color: white;
+}
+
+#wishlists .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+#wishlists-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#wishlists h1 {
+    font-family: Manrope;
+    font-style: bold;
+    font-size: 40px;
+}
+
+#wishlists-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#wishlists-sort {
+    display: flex;
+    gap: 5px;
+}
+
+.wishlists-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    column-gap: 20px;
+}
+
+.wishlist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 386px;
+    padding: 20px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+}
+
+.wishlist-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wishlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.wishlist-header h4 {
+    font-family: Manrope;
+    font-size: 20px;
+}
+
+.wishlist-header p {
+    color: #544388;
+}
+
+.wishlist-description {
+    color: #888888;
+}
+
+.wishlist-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wishlist-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    width: 102px;
+    height: 102px;
 }
 
 footer {
