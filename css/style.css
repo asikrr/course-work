@@ -56,13 +56,25 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="date"],
+textarea {
     border-radius: 10px;
     border-color: #544388;
     border-width: 1px;
     outline: none;
     height: 50px;
     padding: 10px 15px;
+    width: 340px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #544388;
+}
+
+textarea {
+    resize: none;
 }
 
 button {
@@ -84,6 +96,12 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+h4 {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 header .wrapper {
@@ -113,7 +131,8 @@ header .wrapper {
 #signup-link,
 #wishlist-create-link,
 #register-button,
-#login-button {
+#login-button,
+#save-button {
     background-color: #FFCF68;
 }
 
@@ -121,7 +140,8 @@ header .wrapper {
 #register-link,
 #wishlist-create-link,
 #register-button,
-#login-button  {
+#login-button,
+#save-button {
     padding: 15px 30px;
     border-radius: 50px;
 }
@@ -221,11 +241,6 @@ header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: start;
-}
-
-.wishlist-header h4 {
-    font-family: Manrope;
-    font-size: 20px;
 }
 
 .wishlist-header p {
@@ -354,7 +369,7 @@ header .wrapper {
     align-items: center;
 }
 
-#date {
+#wishlist-date {
     font-size: 20px;
     font-weight: 600;
     color: #544388;
@@ -482,12 +497,6 @@ header .wrapper {
     align-items: start;
 }
 
-.gift-description-header h4 {
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 600;
-}
-
 .gift-description button {
     border: none;
     background: none;
@@ -529,6 +538,88 @@ header .wrapper {
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+#wishlist-create {
+    padding-top: 70px;
+}
+
+#wishlist-create {
+    padding-top: 70px;
+}
+
+#wishlist-creation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#wishlist-creation-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#wishlist-create .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#wishlist-creation-form-top,
+#wishlist-creation-form-middle,
+#wishlist-creation-form-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#wishlist-creation-form-top label {
+    padding-left: 10px;
+}
+
+#wishlist-creation-form-middle > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#wishlist-creation-form-bottom > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#form-fields-top {
+    display: flex;
+    gap: 20px;
+}
+
+#form-fields-top input {
+    display: flex;
+    gap: 20px;
+}
+
+#form-fields-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#form-fields-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#form-fields-bottom textarea {
+    width: 700px;
+    height: 130px;
+}
+
+#save-button {
+    border: none;
+    width: fit-content;
 }
 
 footer {
