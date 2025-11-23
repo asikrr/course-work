@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header-left">
+                <img src="images/header-logo.svg" alt="Логотип">
+            </div>
+            <div class="header-center">
+                <button class="theme-change-button">
+                    <img src="images/dark-theme-icon.svg" alt="Смена темы">
+                </button>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <a href="/">Мои вишлисты</a>
+                    <a href="/"><img src="images/avatar.svg" alt="Аватарка"></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="wrapper">
+                <h1>Профиль</h1>
+                <div id="profile-content">
+                    <div class="container" id="account-container">
+                        <img class="profile-picture" src="images/avatar.svg" alt="Аватар">
+                        <form id="profile-form">
+                            <label for="profile-image-input" id="profile-image-label">Добавить фото</label>
+                            <input type="file" id="profile-image-input" name="profile-image" accept="image/*">
+                            <div class="form-field">
+                                <label for="username">Имя</label>
+                                <input type="text" id="username" name="username">
+                            </div>
+                            <button type="submit" class="yellow-button">Сохранить</button>
+                        </form>
+                    </div>
+                    <div class="container" id="notifications-container">
+                        <h4>Уведомления</h4>
+                        <div id="empty-notifications">
+                            <div>
+                                <img src="images/bell-icon.svg" alt="Уведомления">
+                            </div>
+                            <p>Уведомлений нет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="logo-container">
+                <img src="images/footer-logo.svg">
+            </div>
+            <p>&copy;WishCraft 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
