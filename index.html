@@ -10,7 +10,7 @@
     <header>
         <div class="wrapper">
             <div class="header-left">
-                <img src="images/header-logo.svg" alt="Логотип">
+                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
             </div>
             <div class="header-center">
                 <button class="theme-change-button">
@@ -19,8 +19,8 @@
             </div>
             <div class="header-right">
                 <nav>
-                    <a href="/" id="login-link">Войти</a>
-                    <a href="/" id="register-link">Зарегистрироваться</a>
+                    <a href="login.html" class="purple-border-button">Войти</a>
+                    <a href="register.html" class="yellow-button">Зарегистрироваться</a>
                 </nav>
             </div>
         </div>
@@ -33,20 +33,43 @@
                         <h1>WishCraft</h1>
                         <p>Создавайте списки желаний и делитесь мечтами с близкими</p>
                     </div>       
-                    <a href="/" id="wishlist-create-link">Создать список</a>
+                    <a href="" class="yellow-button">Создать список</a>
                 </div>
             </div>
         </section>
-        <section id="site-description">
+        <section id="site-info">
             <div class="wrapper">
-
+                <div id="site-info-header">
+                    <h2>О сайте</h2>
+                    <p>WishCraft - удобный сервис для создания списков желаний. 
+                        Всего несколько простых шагов<br> и вы всегда будете получать только нужные подарки</p>
+                </div>
+                <div id="site-info-content">
+                    <div class="container">
+                        <img src="images/default-avatar.svg">
+                        <h4>Зарегистрируйтесь на сайте</h4>
+                        <p>Регистрация простая и не займет много времени</p>
+                    </div>
+                    <img src="images/horizontal-arrow-icon.svg">
+                    <div class="container">
+                        <img src="images/wishlist-icon.svg">
+                        <h4>Создайте список желаний</h4>
+                        <p>Добавляйте в список подарки, которые хотите получить</p>
+                    </div>
+                    <img src="images/horizontal-arrow-icon.svg">
+                    <div class="container">
+                        <img src="images/click-on-link-icon.svg">
+                        <h4>Поделитесь ссылкой</h4>
+                        <p>Готово! Теперь вы будете получать только желаемые подарки</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="wrapper">
             <div class="logo-container">
-                <img src="images/footer-logo.svg">
+                <a href="/"><img src="images/footer-logo.svg"></a>
             </div>
             <p>&copy;WishCraft 2025</p>
         </div>
