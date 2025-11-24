@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование подарка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header-left">
+                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
+            </div>
+            <div class="header-center">
+                <button class="theme-change-button">
+                    <img src="images/dark-theme-icon.svg" alt="Смена темы">
+                </button>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <a href="my-wishlists.html">Мои вишлисты</a>
+                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="wishlist-create">
+            <div class="wrapper">
+                <h1>Редактирование подарка</h1>
+                <div id="gift-creation-form-container">
+                    <form id="gift-creation-form">
+                        <div id="gift-creation-form-top">
+                            <label for="gift-image-input" id="gift-image-label"></label>
+                            <input type="file" id="gift-image-input" name="gift-image" accept="image/*" style="display: none;">
+                            <div class="form-fields">
+                                <div class="form-field">
+                                    <label for="title">Название</label>
+                                    <input type="text" id="title" name="title" value="Название подарка">
+                                </div>
+                                <div class="form-field">
+                                    <label for="price">Цена</label>
+                                    <input type="text" id="price" name="price" value="500">
+                                </div>
+                                <div class="form-field">
+                                    <label for="link">Ссылка</label>
+                                    <input type="text" id="link" name="link" value="http://127.0.0.1:5500/">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gift-creation-form-bottom">
+                            <div class="form-field">
+                                <label for="gift-comment">Комментарий к подарку</label>
+                                <textarea name="gift-comment" id="gift-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit</textarea>
+                            </div>
+                        </div>
+                        <button type="submit" id="save-button">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="logo-container">
+                <a href="/"><img src="images/footer-logo.svg"></a>
+            </div>
+            <p>&copy;WishCraft 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
