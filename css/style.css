@@ -618,6 +618,48 @@ header .wrapper {
     height: 70px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination-link,
+.pagination-current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    color: #544388;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.pagination-link {
+    background-color: #FFF;
+}
+
+.pagination-link:hover {
+    background-color: #D9D9D9;
+    color: #544388;
+}
+
+.pagination-current,
+.pagination-current:hover {
+    background-color: #544388;
+    color: white;
+    border-color: #544388;
+}
+
+.pagination-disabled,
+.pagination-disabled:hover {
+    color: #D9D9D9;
+    background-color: transparent;
+    cursor: default;
+}
+
 .form-fields {
     display: flex;
     flex-direction: column;
