@@ -82,6 +82,8 @@ button {
     font-family: Geist;
     font-size: 16px;
     width: fit-content;
+    border: none;
+    background: none;
 }
 
 button:hover {
@@ -134,7 +136,6 @@ option {
 .yellow-button {
     background-color: #FFCF68;
     color: #000;
-    border: none;
     border-radius: 50px;
     padding: 15px 30px;
 }
@@ -142,7 +143,6 @@ option {
 .purple-button {
     background-color: #544388;
     color: #FFF;
-    border: none;
     border-radius: 50px;
     padding: 15px 30px;
 }
@@ -158,7 +158,6 @@ option {
 .red-button {
     background-color: #A34C4C;
     color: #FFF;
-    border: none;
     border-radius: 50px;
     padding: 15px 30px;
 }
@@ -199,11 +198,6 @@ header .wrapper {
 #save-button {
     padding: 15px 30px;
     border-radius: 50px;
-}
-
-.theme-change-button {
-    border: none;
-    background-color: transparent;
 }
 
 #main-screen {
@@ -468,8 +462,6 @@ header .wrapper {
 }
 
 #wishlist-header-top-right button {
-    background: none;
-    border: none;
     padding: 0;
 }
 
@@ -598,8 +590,6 @@ header .wrapper {
 }
 
 .gift-description button {
-    border: none;
-    background: none;
     padding: 0;
 }
 
@@ -712,7 +702,6 @@ header .wrapper {
 }
 
 #save-button {
-    border: none;
     width: fit-content;
 }
 
@@ -787,6 +776,10 @@ header .wrapper {
     display: none;
 }
 
+#account-delete-button {
+    color: #A34C4C;
+}
+
 #notifications-container {
     width: 800px;
     display: flex;
@@ -827,11 +820,6 @@ header .wrapper {
     align-items: center;
     justify-content: space-between;
     width: 386px;
-}
-
-.friend-list-item button {
-    background: none;
-    border: none;
 }
 
 .friend-info {
