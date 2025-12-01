@@ -8,11 +8,6 @@
   src: url("../fonts/Manrope.ttf");
 }
 
-@font-face {
-  font-family: CherryBomb;
-  src: url("../fonts/CherryBombOne-Regular.ttf");
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +17,8 @@
 body {
     max-width: 1920px;
     min-height: 1080px;
+    font-family: Geist, sans-serif;
+    font-size: 16px;
 }
 
 main {
@@ -32,7 +29,7 @@ a {
     text-decoration: none;
     color: black;
     font-family: Geist;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h1 {
@@ -41,14 +38,24 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-family: Manrope;
+    font-style: bold;
+    font-size: 36px; 
+}
+
+h3 {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 p {
-    font-family: Geist;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 label {
-    font-family: Geist;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 input[type="text"],
@@ -78,18 +85,6 @@ textarea {
     padding: 10px 15px;
 }
 
-button {
-    font-family: Geist;
-    font-size: 16px;
-    width: fit-content;
-    border: none;
-    background: none;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
 .wrapper {
     max-width: 1200px;
     width: 100%;
@@ -98,16 +93,10 @@ button:hover {
     padding-bottom: 100px;
 }
 
-nav {
+.menu {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-h4 {
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 select {
@@ -123,43 +112,76 @@ select:hover {
     cursor: pointer;
 }
 
-option {
-    font-family: sans-serif;
-}
-
-.container {
+.box {
     background-color: #FFF;
     border-radius: 20px;
     padding: 20px;
 }
 
-.yellow-button {
+button {
+    border: none;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+}
+
+.button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.button-yellow {
     background-color: #FFCF68;
     color: #000;
-    border-radius: 50px;
-    padding: 15px 30px;
 }
 
-.purple-button {
+.button-yellow:hover {
+    background-color: #EFB537;
+    color: #000;
+}
+
+.button-purple {
     background-color: #544388;
     color: #FFF;
-    border-radius: 50px;
-    padding: 15px 30px;
 }
 
-.purple-border-button {
+.button-purple:hover {
+    background-color: #3C2A71;
+}
+
+.button-purple-border {
     background-color: #FFF;
     color: #000;
-    border: 1px solid #544388;;
-    border-radius: 50px;
-    padding: 15px 30px;
+    border: 1px solid #544388;
 }
 
-.red-button {
-    background-color: #A34C4C;
+.button-purple-border:hover {
+    background-color: #544388;
     color: #FFF;
-    border-radius: 50px;
-    padding: 15px 30px;
+}
+
+.button-red {
+    background-color: #C34D4D;
+    color: #FFF;
+}
+
+.button-red:hover {
+    background-color: #9E2D2D;
+    color: #FFF;
+}
+
+.button-icon:hover {
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+.text-accent {
+    color: #544388;
+}
+
+.text-danger {
+    color: #C34D4D;
 }
 
 header {
@@ -173,22 +195,13 @@ header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     padding: 0;
 }
 
-.header-left {
-    flex: 1;
-}
-
-.header-center {
-    flex: 0;
-}
-
-.header-right {
-    flex: 1;
+.header-controls {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
 #save-button {
@@ -200,69 +213,57 @@ header .wrapper {
     border-radius: 50px;
 }
 
-#main-screen {
+.main-screen {
     background-image: url('../images/background-image.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#main-screen h1 {
-    font-family: CherryBomb;
-    font-size: 128px;
-}
-
-#main-screen .wrapper {
+.main-screen .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 325px;
+    padding-bottom: 310px;
 }
 
-#main-screen-content {
+.main-screen-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-#main-screen-content-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-screen-content h1 {
+    text-align: center;
     color: white;
+    max-width: 900px;
 }
 
-#site-info .wrapper {
+.site-info .wrapper {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-#site-info-header {
+.site-info-header {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#site-info-header h2 {
-    font-family: Manrope;
-    font-style: bold;
-    font-size: 40px; 
-}
-
-#site-info-header p {
+.site-info-header p {
     max-width: 762px;
     text-align: justify;
 }
 
-#site-info-content {
+.site-info-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#site-info .container {
+.site-info .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,7 +272,7 @@ header .wrapper {
     width: 324px;
 }
 
-#site-info .container img {
+.site-info .box img {
     height: 250px;
 }
 
@@ -286,12 +287,6 @@ header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#wishlists h1 {
-    font-family: Manrope;
-    font-style: bold;
-    font-size: 40px;
 }
 
 #wishlists-content {
