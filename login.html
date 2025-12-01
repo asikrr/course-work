@@ -9,54 +9,56 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
-                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
+            <div class="header-logo">
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="login.html" class="purple-border-button">Войти</a>
-                    <a href="register.html" class="yellow-button">Зарегистрироваться</a>
+                <nav class="menu">
+                    <a href="login.html" class="button button-purple-border">Войти</a>
+                    <a href="register.html" class="button button-yellow">Зарегистрироваться</a>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section id="login">
-            <div class="wrapper container">
-                <div class="authentication-container">
-                    <h1>Вход</h1>
-                    <div id="authentication-form-container">
-                        <form id="authentication-form">
-                            <div class="form-fields">
-                                <div class="form-field">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email">
+        <section class="login">
+            <div class="wrapper">
+                <div class="box">
+                    <div class="authentication-container">
+                        <h1>Вход</h1>
+                        <div class="authentication-form-container">
+                            <form id="login-form">
+                                <div class="form-fields">
+                                    <div class="form-field">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="password">Пароль</label>
+                                        <input type="password" id="password" name="password">
+                                    </div>
                                 </div>
-                                <div class="form-field">
-                                    <label for="password1">Пароль</label>
-                                    <input type="password" id="password1" name="password1">
-                                </div>
-                            </div>
-                            <button type="submit" id="login-button" class="yellow-button">Войти</button>
-                        </form>
-                        <p>Еще нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+                                <button type="submit" id="login-button" class="button button-yellow">Войти</button>
+                            </form>
+                            <p>Еще нет аккаунта? <a href="register.html" class="text-accent">Зарегистрироваться</a></p>
+                        </div>
+                    </div>
+                    <div class="authentication-image-container">
+                        <img src="images/authentication-image.png">
                     </div>
                 </div>
-                <div class="authentication-image"></div>
             </div>
         </section>
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
-                <a href="/"><img src="images/footer-logo.svg"></a>
+            <div class="footer-logo">
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>
