@@ -9,197 +9,190 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
-                <a href=""><img src="images/header-logo.svg" alt="Логотип"></a>
+            <div class="header-logo">
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="my-wishlists.html">Мои вишлисты</a>
-                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                <nav class="menu">
+                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section id="wishlist-detail">
+        <section class="wishlist-page">
             <div class="wrapper">
-                <div id="wishlist-header">
-                    <div id="wishlist-header-top">
-                        <div id="wishlist-header-top-left">
-                            <h1>Название списка</h1>
+                <div class="wishlist-page-header">
+                    <div class="wishlist-page-header-row">
+                        <div class="wishlist-title">
+                            <h1>Новый год</h1>
                         </div>
-                        <div id="wishlist-header-top-right">
-                            <button>
-                                <img src="images/pin-icon.svg">
-                            </button>
-                            <button>
-                                <img src="images/link-icon.svg">
-                            </button>
-                            <a href="">
-                                <img src="images/pencil-icon.svg">
-                            </a>
-                            <button>
-                                <img src="images/trash-can-icon.svg">
-                            </button>
-                        </div>
-                    </div>
-                    <div id="wishlist-header-middle">
-                        <p id="wishlist-date">31.12.2025</p>
-                        <p id="days-left-counter">осталось 30 дней</p>
-                    </div>
-                    <div id="wishlist-header-bottom">
-                        <p id="wishlist-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt  
-                            mollit anim id est laborum.</p>
-                        <div id="reserved-gifts-counter">
-                            <img src="images/lock-icon.svg">
-                            <p>1/4</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="wishlist-detail-content">
-                    <aside id="wishlist-sort-filter" class="container">
-                        <div id="wishlist-sort">
-                            <p>Сортировать</p>
-                            <select>
-                                <option>сначала дешевле</option>
-                                <option>сначала дороже</option>
-                                <option>по дате добавления</option>
-                            </select>
-                        </div>
-                        <div id="wishlist-filter">
-                            <p>Показать</p>
-                            <div id="wishlist-filter-choices">
-                                <div class="wishlist-filter-choice">
-                                    <input type="radio" name="wishlist-filter-choice" value="all" id="choice-all">
-                                    <label for="choice-all">Все</label>
-                                </div>
-                                <div class="wishlist-filter-choice">
-                                    <input type="radio" name="wishlist-filter-choice" value="reserved-only" id="choice-reserved-only">
-                                    <label for="choice-reserved-only">Только забронированные</label>
-                                </div>
-                                <div class="wishlist-filter-choice">
-                                    <input type="radio" name="wishlist-filter-choice" value="not-reserved-only" id="choice-not-reserved-only">
-                                    <label for="choice-not-reserved-only">Только незабронированные</label>
-                                </div>
-                                <div class="wishlist-filter-choice">
-                                    <input type="radio" name="wishlist-filter-choice" value="priority-only" id="priority-only">
-                                    <label for="priority-only">Только приоритетные подарки</label>
-                                </div>            
+                        <div class="wishlist-actions">
+                                <button type="button" class="button-icon">
+                                    <img src="images/share-link-icon.svg" alt="Поделиться">
+                                </button>
+                                <a href="#" class="button-icon">
+                                    <img src="images/pencil-icon.svg" alt="Редактировать">
+                                </a>
+                                <button type="button" class="button-icon">
+                                    <img src="images/pin-icon.svg" alt="Закрепить">
+                                </button>
+                                <button type="button" class="button-icon">
+                                    <img src="images/trash-can-icon.svg" alt="Удалить">
+                                </button>
                             </div>
                         </div>
-                    </aside>
-                    <div id="wishlist-container">
-                        <div id="gifts-container">
-                            <article class="priority-gift-container container">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
+                        <div class="wishlist-date-info">
+                            <p class="wishlist-date text-accent">31.12.2025</p>
+                            <p class="text-highlight">осталось 30 дней</p>
+                        </div>
+                        <div class="wishlist-summary">
+                            <p class="wishlist-description">
+                                Это список желаний на Новый год! Буду рада любому подарку из списка
+                            </p>
+                            <div class="wishlist-summary-actions">
+                                <div class="reserved-gifts-counter">
+                                    <img src="images/lock-icon.svg">
+                                    <p>1/4</p>
                                 </div>
-                                <div class="gift-description-container">
-                                    <div class="gift-description">
-                                        <div class="gift-description-header">
-                                            <div>
-                                                <h4>Название подарка</h4>
-                                                <p class="gift-description-price">500р</p>
-                                            </div>
-                                            <button>
-                                                <img src="images/action-menu-icon.svg">
-                                            </button>
-                                        </div>
-                                        <div class="gift-description-comment">
-                                            <p>Комментарий</p>
-                                            <button>
-                                                <img src="images/arrow-icon.svg">
-                                            </button>
-                                        </div>
+                                <a href="#" class="button button-yellow">Добавить товар</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wishlist-content">
+                        <div class="wishlist-controls box">
+                            <div class="wishlist-sort">
+                                <p>Сортировать</p>
+                                <select>
+                                    <option>сначала дешевле</option>
+                                    <option>сначала дороже</option>
+                                    <option>по дате добавления</option>
+                                </select>
+                            </div>
+                            <div class="wishlist-filter">
+                                <p>Показать</p>
+                                <div class="wishlist-filter-choices">
+                                    <div class="wishlist-filter-choice">
+                                        <input type="radio" name="wishlist-filter-choice" value="all" id="choice-all">
+                                        <label for="choice-all">Все</label>
                                     </div>
-                                    <a href="" class="purple-button">Перейти в магазин</a>
-                                </div>
-                            </article>
-                            <article class="gift-container container">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="gift-description-container">
-                                    <div class="gift-description">
-                                        <div class="gift-description-header">
-                                            <div>
-                                                <h4>Название подарка</h4>
-                                                <p class="gift-description-price">500р</p>
-                                            </div>
-                                            <button>
-                                                <img src="images/action-menu-icon.svg">
-                                            </button>
-                                        </div>
-                                        <div class="gift-description-comment">
-                                            <p>Комментарий</p>
-                                            <button>
-                                                <img src="images/arrow-icon.svg">
-                                            </button>
-                                        </div>
+                                    <div class="wishlist-filter-choice">
+                                        <input type="radio" name="wishlist-filter-choice" value="reserved-only" id="choice-reserved-only">
+                                        <label for="choice-reserved-only">Только забронированные</label>
                                     </div>
-                                    <a href="" class="purple-button">Перейти в магазин</a>
-                                </div>
-                            </article>
-                            <article class="gift-container container">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="gift-description-container">
-                                    <div class="gift-description">
-                                        <div class="gift-description-header">
-                                            <div>
-                                                <h4>Название подарка</h4>
-                                                <p class="gift-description-price">500р</p>
-                                            </div>
-                                            <button>
-                                                <img src="images/action-menu-icon.svg">
-                                            </button>
-                                        </div>
-                                        <div class="gift-description-comment">
-                                            <p>Комментарий</p>
-                                            <button>
-                                                <img src="images/arrow-icon.svg">
-                                            </button>
-                                        </div>
+                                    <div class="wishlist-filter-choice">
+                                        <input type="radio" name="wishlist-filter-choice" value="not-reserved-only" id="choice-not-reserved-only">
+                                        <label for="choice-not-reserved-only">Только незабронированные</label>
                                     </div>
-                                    <a href="" class="purple-button">Перейти в магазин</a>
+                                    <div class="wishlist-filter-choice">
+                                        <input type="radio" name="wishlist-filter-choice" value="priority-only" id="priority-only">
+                                        <label for="choice-priority-only">Только приоритетные подарки</label>
+                                    </div>            
                                 </div>
-                            </article>
-                            <article class="gift-container container">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="gift-description-container">
-                                    <div class="gift-description">
-                                        <div class="gift-description-header">
-                                            <div>
-                                                <h4>Название подарка</h4>
-                                                <p class="gift-description-price">500р</p>
-                                            </div>
-                                            <button>
-                                                <img src="images/action-menu-icon.svg">
-                                            </button>
-                                        </div>
-                                        <div class="gift-description-comment">
-                                            <p>Комментарий</p>
-                                            <button>
-                                                <img src="images/arrow-icon.svg">
-                                            </button>
-                                        </div>
+                            </div>
+                        </div>
+                        <div class="wishlist-gifts">
+                            <div class="gifts-list">
+                                <article class="gift gift-priority box">
+                                    <div class="gift-image">
+                                        <img src="images/gift-icon.svg">
                                     </div>
-                                    <a href="" class="purple-button">Перейти в магазин</a>
-                                </div>
-                            </article>
+                                    <div class="gift-body">
+                                        <div class="gift-header">
+                                            <div class="gift-header-info">
+                                                <h3 class="gift-title">Наушники</h3>
+                                                <p class="gift-price text-accent">5000р</p>
+                                            </div>
+                                            <div class="gift-actions">
+                                                <img src="images/fire-icon.svg">
+                                                <button type="button" class="button-icon">
+                                                    <img src="images/action-menu-icon.svg">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="button button-purple">Перейти в магазин</a>
+                                    </div>
+                                </article>
+                                <article class="gift gift-reserved box">
+                                    <div class="gift-image">
+                                        <img src="images/gift-icon.svg">
+                                    </div>
+                                    <div class="gift-body">
+                                        <div class="gift-content">
+                                            <p class="text-highlight">Забронирован</p>
+                                            <div class="gift-header">
+                                                <div class="gift-header-info">
+                                                    <h3 class="gift-title">Кружка</h3>
+                                                    <p class="gift-price text-accent">500р</p>
+                                                </div>
+                                                <div class="gift-actions">
+                                                    <button type="button" class="button-icon">
+                                                        <img src="images/action-menu-icon.svg">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="gift-comment">
+                                                <p>Комментарий</p>
+                                                <button type="button" class="button-icon">
+                                                    <img src="images/arrow-icon.svg">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="button button-purple">Перейти в магазин</a>
+                                    </div>
+                                </article>
+                                <article class="gift box">
+                                    <div class="gift-image">
+                                        <img src="images/gift-icon.svg">
+                                    </div>
+                                    <div class="gift-body">
+                                        <div class="gift-content">
+                                            <div class="gift-header">
+                                                <div class="gift-header-info">
+                                                    <h3 class="gift-title">Худи</h3>
+                                                    <p class="gift-price text-accent">1900р</p>
+                                                </div>
+                                                <div class="gift-actions">
+                                                    <button type="button" class="button-icon">
+                                                        <img src="images/action-menu-icon.svg">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="gift-comment">
+                                                <p>Комментарий</p>
+                                                <button type="button" class="button-icon">
+                                                    <img src="images/arrow-icon.svg">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="button button-purple">Перейти в магазин</a>
+                                    </div>
+                                </article>
+                                <article class="gift box">
+                                    <div class="gift-image">
+                                        <img src="images/gift-icon.svg">
+                                    </div>
+                                    <div class="gift-body">
+                                        <div class="gift-content">
+                                            <div class="gift-header">
+                                                <div class="gift-header-info">
+                                                    <h3 class="gift-title">Сумка</h3>
+                                                    <p class="gift-price text-accent">800р</p>
+                                                </div>
+                                                <div class="gift-actions">
+                                                    <button type="button" class="button-icon">
+                                                        <img src="images/action-menu-icon.svg">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="button button-purple">Перейти в магазин</a>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,10 +201,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
-                <a href=""><img src="images/footer-logo.svg"></a>
+            <div class="footer-logo">
+                <a href="/"><img src="images/footer-logo.svg"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>

@@ -184,10 +184,20 @@ button {
 
 .text-accent {
     color: #544388;
+    font-weight: 600;
 }
 
 .text-danger {
     color: #C34D4D;
+    font-weight: 600;
+}
+
+.text-highlight {
+    color: black;
+    background-color: #FFCF68;
+    padding: 0 15px;
+    border-radius: 50px;
+    width: fit-content;
 }
 
 header {
@@ -324,14 +334,6 @@ header .wrapper {
     align-items: start;
 }
 
-.wishlist-header p {
-    color: #544388;
-}
-
-.wishlist-description {
-    color: #888888;
-}
-
 .wishlist-items {
     display: flex;
     flex-wrap: wrap;
@@ -401,25 +403,25 @@ header .wrapper {
     padding-left: 10px;
 }
 
-#wishlist-detail .wrapper, #not-owner-wishlist-detail .wrapper {
+.wishlist-page .wrapper, .not-owner-wishlist-detail .wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-height: 100vh;
 }
 
-#not-owner-wishlist-detail #wishlist-header-top {
+.not-owner-wishlist-detail {
     flex-direction: column;
     align-items: start;
 }
 
-#wishlist-owner {
+.wishlist-owner {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#wishlist-owner img {
+.wishlist-owner img {
     width: 50px;
 }
 
@@ -429,56 +431,52 @@ header .wrapper {
     height: 51px;
 }
 
-#wishlist-header {
+.wishlist-page-header {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-#wishlist-header-top {
+.wishlist-page-header-row {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-#wishlist-header-top-right {
+.wishlist-actions {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-#wishlist-header-top-right button {
-    padding: 0;
-}
-
-#wishlist-header-middle {
+.wishlist-date-info {
     display: flex;
     gap: 5px;
     align-items: center;
 }
 
-#wishlist-date {
+.wishlist-date {
     font-size: 20px;
     font-weight: 600;
-    color: #544388;
 }
 
-#days-left-counter {
-    color: black;
-    background-color: #FFCF68;
-    padding: 0 15px;
-    border-radius: 50px;
-}
-
-#wishlist-description {
+.wishlist-description {
     max-width: 736px;
     text-align: justify;
 }
 
-#wishlist-header-bottom {
+.wishlist-summary {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+}
+
+.wishlist-summary-actions {
+    display: flex;
+    align-items: end;
+    align-self: flex-end;
+    gap: 20px;
 }
 
 .reserved-gifts-counter {
@@ -488,23 +486,23 @@ header .wrapper {
     align-self: flex-end;
 }
 
-#wishlist-detail-content {
+.wishlist-content {
     display: flex;
     justify-content: space-between;
 }
 
-#wishlist-container {
+.wishlist-gifts {
     display: flex;
     gap: 20px;
 }
 
-#wishlist-filter-choices {
+.wishlist-filter-choices {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-#wishlist-sort-filter {
+.wishlist-controls {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -513,15 +511,15 @@ header .wrapper {
     padding: 20px;
 }
 
-#wishlist-sort,
-#wishlist-filter {
+.wishlist-sort,
+.wishlist-filter {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#wishlist-sort p,
-#wishlist-filter p {
+.wishlist-sort p,
+.wishlist-filter p {
     font-family: Manrope;
     font-weight: 600;
     font-size: 20px;
@@ -533,58 +531,63 @@ header .wrapper {
     gap: 10px;
 }
 
-#gifts-container {
+.gifts-list {
     display: flex;
     flex-wrap: wrap;
     max-width: 908px;
     gap: 20px;
 }
 
-#gifts-container .container {
+.gifts-list .box {
     padding: 0;
 }
 
-.priority-gift-container,
-.gift-container {
+.gift {
     display: flex;
     width: 444px;
-    height: 234px;
+    min-height: 234px;
 }
 
-.priority-gift-container {
-    box-shadow: 0px 0px 20px rgb(255, 207, 104, 0.7);
+.gift-priority {
+    box-shadow: 0px 0px 10px 3px rgb(255, 207, 104, 0.7);
 }
 
-.gift-description-container {
+.gift-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 5px;
     padding: 20px;
     width: 245px;
 }
 
-.gift-description {
+.gift-content {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.gift-description-header {
+.gift-header {
     display: flex;
     justify-content: space-between;
     align-items: start;
+}
+
+.gift-actions {
+    display: flex;
+    gap: 13px;
+    align-items: end;
+}
+
+.gift-description-header h3 {
+    max-width: 160px;
 }
 
 .gift-description button {
     padding: 0;
 }
 
-.gift-description-price {
-    font-weight: 600;
-    color: #544388;
-}
-
-.gift-description-comment {
+.gift-comment {
     display: flex;
     gap: 6px;
     color: #888888;
