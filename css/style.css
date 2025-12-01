@@ -102,10 +102,9 @@ textarea {
 select {
     background-color: #FFF;
     padding: 4px 10px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #C5C1D2;
     border-radius: 10px;
-    font-family: Geist;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 select:hover {
@@ -115,6 +114,7 @@ select:hover {
 .box {
     background-color: #FFF;
     border-radius: 20px;
+    outline: 1px solid #C5C1D2;
     padding: 20px;
 }
 
@@ -204,15 +204,6 @@ header .wrapper {
     gap: 20px;
 }
 
-#save-button {
-    background-color: #FFCF68;
-}
-
-#save-button {
-    padding: 15px 30px;
-    border-radius: 50px;
-}
-
 .main-screen {
     background-image: url('../images/background-image.png');
     background-repeat: no-repeat;
@@ -276,26 +267,26 @@ header .wrapper {
     height: 250px;
 }
 
-#wishlists .wrapper {
+.wishlists .wrapper {
     display: flex;
     flex-direction: column;
     gap: 30px;
     min-height: 100vh;
 }
 
-#wishlists-header {
+.wishlists-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#wishlists-content {
+.wishlists-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#wishlists-sort {
+.wishlists-sort {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -344,7 +335,7 @@ header .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: #C5C1D2;
     border-radius: 20px;
     width: 102px;
     height: 102px;
@@ -490,7 +481,7 @@ header .wrapper {
     justify-content: space-between;
 }
 
-#reserved-gifts-counter {
+.reserved-gifts-counter {
     display: flex;
     gap: 5px;
     align-items: end;
@@ -627,8 +618,8 @@ header .wrapper {
     align-items: center;
     width: 36px;
     height: 36px;
-    color: #544388;
-    border: 1px solid #D9D9D9;
+    color: #000;
+    border: 1px solid #C5C1D2;
     border-radius: 10px;
 }
 
@@ -637,8 +628,8 @@ header .wrapper {
 }
 
 .pagination-link:hover {
-    background-color: #D9D9D9;
-    color: #544388;
+    background-color: #A69BC8;
+    border: none;
 }
 
 .pagination-current,
@@ -653,6 +644,7 @@ header .wrapper {
     color: #D9D9D9;
     background-color: transparent;
     cursor: default;
+    border: 1px solid #C5C1D2;
 }
 
 .form-fields {

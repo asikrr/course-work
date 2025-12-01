@@ -9,257 +9,264 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
+            <div class="header-logo">
                 <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="my-wishlists.html">Мои вишлисты</a>
-                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                <nav class="menu">
+                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section id="wishlists">
+        <section class="wishlists">
             <div class="wrapper">
-                <div id="wishlists-header">
-                    <h1>Ваши списки желаний</h1>
-                    <a href="wishlist-create.html" class="yellow-button">Создать список</a>
+                <div class="wishlists-header">
+                    <h1>Мои вишлисты</h1>
+                    <a href="wishlist-create.html" class="button button-yellow">Создать вишлист</a>
                 </div>
-                <div id="wishlists-content">
-                    <div id="wishlists-sort">
-                        <p>Сортировать</p>
-                        <select>
-                            <option>по дате мероприятия</option>
-                            <option>по новизне</option>
+                <div class="wishlists-content">
+                    <div class="wishlists-sort">
+                        <label for="sort-select">Сортировать</label>
+                        <select id="sort-select" name="sort">
+                            <option value="date">по дате мероприятия</option>
+                            <option value="new">по новизне</option>
                         </select>
                     </div>
                     <div class="wishlists-container">
-                        <article class="container wishlist">
+                        <article class="box wishlist">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
+                                        <h3>Название списка</h3>
+                                        <p class="text-accent">31.12.2025</p>
                                     </div>
-                                    <img src="images/action-menu-icon.svg">
+                                    <button type="button">
+                                        <img src="images/action-menu-icon.svg">
+                                    </button>
                                 </div>
-                                <div id="reserved-gifts-counter">
+                                <div class="reserved-gifts-counter">
                                     <img src="images/lock-icon.svg">
                                     <p>1/4</p>
                                 </div>
                             </div>
                             <div class="wishlist-items">
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                             </div>
                         </article>
-                        <article class="container wishlist">
+                        <article class="box wishlist">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
+                                        <h3>Название списка</h3>
+                                        <p class="text-accent">31.12.2025</p>
                                     </div>
-                                    <img src="images/action-menu-icon.svg">
+                                    <button type="button">
+                                        <img src="images/action-menu-icon.svg">
+                                    </button>
                                 </div>
-                                <div id="reserved-gifts-counter">
+                                <div class="reserved-gifts-counter">
                                     <img src="images/lock-icon.svg">
                                     <p>1/4</p>
                                 </div>
                             </div>
                             <div class="wishlist-items">
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                             </div>
                         </article>
-                        <article class="container wishlist">
+                        <article class="box wishlist">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
+                                        <h3>Название списка</h3>
+                                        <p class="text-accent">31.12.2025</p>
                                     </div>
-                                    <img src="images/action-menu-icon.svg">
+                                    <button type="button">
+                                        <img src="images/action-menu-icon.svg">
+                                    </button>
                                 </div>
-                                <div id="reserved-gifts-counter">
+                                <div class="reserved-gifts-counter">
                                     <img src="images/lock-icon.svg">
                                     <p>1/4</p>
                                 </div>
                             </div>
                             <div class="wishlist-items">
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                             </div>
                         </article>
-                        <article class="container wishlist">
+                        <article class="box wishlist">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
+                                        <h3>Название списка</h3>
+                                        <p class="text-accent">31.12.2025</p>
                                     </div>
-                                    <img src="images/action-menu-icon.svg">
+                                    <button type="button">
+                                        <img src="images/action-menu-icon.svg">
+                                    </button>
                                 </div>
-                                <div id="reserved-gifts-counter">
+                                <div class="reserved-gifts-counter">
                                     <img src="images/lock-icon.svg">
                                     <p>1/4</p>
                                 </div>
                             </div>
                             <div class="wishlist-items">
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                             </div>
                         </article>
-                        <article class="container wishlist">
+                        <article class="box wishlist">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
+                                        <h3>Название списка</h3>
+                                        <p class="text-accent">31.12.2025</p>
                                     </div>
-                                    <img src="images/action-menu-icon.svg">
+                                    <button type="button">
+                                        <img src="images/action-menu-icon.svg">
+                                    </button>
                                 </div>
-                                <div id="reserved-gifts-counter">
+                                <div class="reserved-gifts-counter">
                                     <img src="images/lock-icon.svg">
                                     <p>1/4</p>
                                 </div>
                             </div>
                             <div class="wishlist-items">
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                             </div>
                         </article>
-                        <article class="container wishlist">
+                        <article class="box wishlist">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
+                                        <h3>Название списка</h3>
+                                        <p class="text-accent">31.12.2025</p>
                                     </div>
-                                    <img src="images/action-menu-icon.svg">
+                                    <button type="button">
+                                        <img src="images/action-menu-icon.svg">
+                                    </button>
                                 </div>
-                                <div id="reserved-gifts-counter">
+                                <div class="reserved-gifts-counter">
                                     <img src="images/lock-icon.svg">
                                     <p>1/4</p>
                                 </div>
                             </div>
                             <div class="wishlist-items">
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                             </div>
                         </article>
                     </div>
-                        <div id="pagination" class="pagination">
-                        <a href="#" class="pagination-link pagination-disabled">&laquo;</a>
+                        <div class="pagination">
+                        <a href="#" class="pagination-link pagination-disabled"><img src="images/pagination-arrow-left-disabled.svg"></a>
                         <a href="#" class="pagination-link pagination-current">1</a>
                         <a href="#" class="pagination-link">2</a>
                         <a href="#" class="pagination-link">3</a>
-                        <a href="#" class="pagination-link">4</a>
-                        <a href="#" class="pagination-link">5</a>
-                        <a href="#" class="pagination-link">&raquo;</a>
+                        <a href="#" class="pagination-link"><img src="images/pagination-arrow-right.svg"></a>
                     </div>
                 </div>
             </div>
@@ -267,10 +274,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
+            <div class="footer-logo">
                 <a href="/"><img src="images/footer-logo.svg"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>
