@@ -32,7 +32,7 @@ a {
     font-size: 1rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: Manrope;
 }
 
@@ -42,12 +42,17 @@ h1 {
 }
 
 h2 {
-    font-size: 2.25rem; 
+    font-size: 2rem; 
     font-weight: 700;
 }
 
 h3 {
     font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 0.625rem;
     font-weight: 600;
 }
 
@@ -61,6 +66,7 @@ button {
     background: none;
     cursor: pointer;
     width: fit-content;
+    font-family: inherit;
 }
 
 label {
@@ -379,7 +385,7 @@ header .wrapper {
 }
 
 .pagination-link:hover {
-    background-color: #A69BC8;
+    background-color: #B4A6DE;
     border: none;
 }
 
@@ -539,7 +545,8 @@ header .wrapper {
     justify-content: space-between;
 }
 
-.wishlist-gifts {
+.wishlist-gifts, 
+.reserved-gifts {
     display: flex;
     gap: 20px;
 }
@@ -579,14 +586,14 @@ header .wrapper {
     gap: 10px;
 }
 
-.gifts-list {
+.gifts-container {
     display: flex;
     flex-wrap: wrap;
     max-width: 908px;
     gap: 20px;
 }
 
-.gifts-list .box {
+.gifts-container > .box {
     padding: 0;
 }
 
@@ -621,7 +628,7 @@ header .wrapper {
     align-items: start;
 }
 
-.gift-actions {
+.gift-header-actions {
     display: flex;
     gap: 13px;
     align-items: end;
@@ -645,14 +652,24 @@ header .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 199px;
-    height: 234px;
-    background-color: #D9D9D9;
+    background-color: #C5C1D2;
     border-radius: 20px;
 }
 
 .gift-image img {
     height: 70px;
+}
+
+.gift-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gift-actions .button {
+    width: 205px;
 }
 
 .form-fields {
@@ -779,82 +796,86 @@ header .wrapper {
     height: 100px;
 }
 
-#profile .wrapper {
+.profile .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
-#profile-content {
+.profile-content {
     display: flex;
     gap: 20px;
 }
 
-#account-container .profile-picture {
+.account-info .profile-picture {
     width: 340px;
     height: 340px;
 }
 
-#profile-image-label {
-    color: #544388;
-}
-
-#profile-image-label:hover {
-    cursor: pointer;
-}
-
-#profile-form {
+.friend-list .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
-}
-
-#profile-form .form-field label {
-    padding-left: 10px;
-}
-
-#profile-form input[type="file"] {
-    display: none;
-}
-
-#account-delete-button {
-    color: #A34C4C;
-}
-
-#notifications-container {
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-}
-
-#empty-notifications {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex: 1; 
-    gap: 10px;
-}
-
-#friend-list .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     min-height: 100vh;
 }
 
-#friend-list-header {
+.friend-list-header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    gap: 30px;
+    width: 100%;
 }
 
-#friend-list-items {
+.tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tabs-toggle {
+  display: none;
+}
+
+.friend-list-content .tab-content {
+  display: none;
+}
+
+#tab-my-friends:checked ~ .friend-list-content #tab-content-my-friends,
+#tab-friend-requests:checked ~ .friend-list-content #tab-content-friend-requests {
+  display: block;
+}
+
+.tabs label {
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 1px solid #C5C1D2;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+#tab-my-friends:checked ~ .friend-list-header .tabs label[for="tab-my-friends"],
+#tab-friend-requests:checked ~ .friend-list-header .tabs label[for="tab-friend-requests"] {
+  background-color: #544388;
+  color: #FFF;
+  border-color: #544388;
+  cursor: default;
+}
+
+.friend-list-header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.friend-list-items {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.friend-list-items .box {
+    padding: 10px;
 }
 
 .friend-list-item {
@@ -870,48 +891,43 @@ header .wrapper {
     gap: 20px;
 }
 
-#user-wishlists .wrapper {
+.user-wishlists {
+    min-height: 100vh;
+}
+
+.user-wishlists .wrapper {
     display: flex;
     flex-direction: column;
     gap: 30px;
     min-height: 100vh;
 }
 
-#user-wishlists #wishlists-content {
-    gap: 10px;
+.wishlists-content {
+    gap: 20px;
 }
 
-#user-wishlists-header {
+.wishlists-owner {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-#user-wishlists-header img {
+.wishlists-owner img {
     width: 200px;
     height: 200px;
 }
 
-#user-wishlists-header-right {
+.wishlists-owner-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#reserved-gifts .wrapper {
+.reserved-gifts .wrapper {
     display: flex;
     flex-direction: column;
     gap: 30px;
     min-height: 100vh;
-}
-
-#reserved-gifts-content {
-    display: flex;
-    gap: 20px;
-}
-
-#reserved-gifts .gift-image {
-    position: relative;
 }
 
 .gift-wishlist-info {
@@ -920,7 +936,7 @@ header .wrapper {
     gap: 10px;
     position: absolute;
     bottom: 20px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #FFF;
     border-radius: 20px;
 }

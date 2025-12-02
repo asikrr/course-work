@@ -9,56 +9,68 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
-                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
+            <div class="header-logo">
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="my-wishlists.html">Мои вишлисты</a>
-                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                <nav class="menu">
+                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section id="friend-list">
+        <section class="friend-list">
             <div class="wrapper">
-                <div id="friend-list-header">
+                <input id="tab-my-friends" class="tabs-toggle" name="tab-button" type="radio" value="my-friends" checked>
+                <input id="tab-friend-requests" class="tabs-toggle" name="tab-button" type="radio" value="friend-requests">
+                <div class="friend-list-header">
                     <h1>Друзья</h1>
-                    <a href="" class="yellow-button">Добавить друга</a>
+                    <div class="friend-list-header-controls">
+                        <div class="tabs">
+                            <label for="tab-my-friends">Мои друзья</label>
+                            <label for="tab-friend-requests">Заявки</label>
+                        </div>
+                        <button type="button" class="button button-yellow">Добавить друга</button>
+                    </div>
                 </div>
-                <div id="friend-list-items">
-                    <div class="container friend-list-item">
-                        <div class="friend-info">
-                            <img src="images/default-avatar.svg">
-                            <p>Имя</p>
+                <div class="friend-list-content">
+                    <div class="tab-content" id="tab-content-my-friends">
+                        <div class="friend-list-items">
+                            <div class="friend-list-item box">
+                                <div class="friend-info">
+                                    <img src="images/default-avatar.svg" alt="Изображение профиля">
+                                    <p>Олег</p>
+                                </div>
+                                <button class="button-icon" type="button">
+                                    <img src="images/trash-can-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="friend-list-item box">
+                                <div class="friend-info">
+                                    <img src="images/default-avatar.svg" alt="Изображение профиля">
+                                    <p>Алиса</p>
+                                </div>
+                                <button class="button-icon" type="button">
+                                    <img src="images/trash-can-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="friend-list-item box">
+                                <div class="friend-info">
+                                    <img src="images/default-avatar.svg" alt="Изображение профиля">
+                                    <p>Даша</p>
+                                </div>
+                                <button class="button-icon" type="button">
+                                    <img src="images/trash-can-icon.svg" alt="">
+                                </button>
+                            </div>
                         </div>
-                        <button>
-                            <img src="images/trash-can-icon.svg">
-                        </button>
                     </div>
-                    <div class="container friend-list-item">
-                        <div class="friend-info">
-                            <img src="images/default-avatar.svg">
-                            <p>Имя</p>
-                        </div>
-                        <button>
-                            <img src="images/trash-can-icon.svg">
-                        </button>
-                    </div>
-                    <div class="container friend-list-item">
-                        <div class="friend-info">
-                            <img src="images/default-avatar.svg">
-                            <p>Имя</p>
-                        </div>
-                        <button>
-                            <img src="images/trash-can-icon.svg">
-                        </button>
+                    <div class="tab-content" id="tab-content-friend-requests">
+                        <p>Список заявок пуст</p>
                     </div>
                 </div>
             </div>
@@ -66,10 +78,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
-                <a href="/"><img src="images/footer-logo.svg"></a>
+            <div class="footer-logo">
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>

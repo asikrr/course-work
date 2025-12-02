@@ -9,48 +9,29 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
-                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
+            <div class="header-logo">
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="my-wishlists.html">Мои вишлисты</a>
-                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                <nav class="menu">
+                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section id="profile">
+        <section class="profile">
             <div class="wrapper">
                 <h1>Профиль</h1>
-                <div id="profile-content">
-                    <div class="container" id="account-container">
-                        <img class="profile-picture" src="images/default-avatar.svg" alt="Аватар">
-                        <form id="profile-form">
-                            <label for="profile-image-input" id="profile-image-label">Добавить фото</label>
-                            <input type="file" id="profile-image-input" name="profile-image" accept="image/*">
-                            <div class="form-field">
-                                <label for="username">Имя</label>
-                                <input type="text" id="username" name="username">
-                            </div>
-                            <button type="submit" class="yellow-button">Сохранить</button>
-                            <button id="account-delete-button">Удалить аккаунт</button>
-                        </form>
+                <div class="profile-content">
+                    <div class="account-info box">
+                        <img class="profile-picture" src="images/default-avatar.svg" alt="Изображение профиля">
                     </div>
-                    <div class="container" id="notifications-container">
-                        <h4>Уведомления</h4>
-                        <div id="empty-notifications">
-                            <div>
-                                <img src="images/bell-icon.svg" alt="Уведомления">
-                            </div>
-                            <p>Уведомлений нет</p>
-                        </div>
+                    <div class="settings box">
+                        <h3>Настройки</h3>
                     </div>
                 </div>
             </div>
@@ -58,10 +39,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
-                <a href="/"><img src="images/footer-logo.svg"></a>
+            <div class="footer-logo">
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>

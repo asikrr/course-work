@@ -9,144 +9,70 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
-                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
+            <div class="header-logo">
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="my-wishlists.html">Мои вишлисты</a>
-                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                <nav class="menu">
+                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section id="user-wishlists">
+        <section class="user-wishlists">
             <div class="wrapper">
-                <div id="user-wishlists-header">
+                <div class="wishlists-owner">
                     <img src="images/default-avatar.svg">
-                    <div id="user-wishlists-header-right">
-                        <h1>Имя</h1>
-                        <a href="" class="yellow-button">Добавить в друзья</a>
+                    <div class="wishlists-owner-info">
+                        <h1>Олег</h1>
+                        <button class="button button-yellow">Добавить в друзья</button>
                     </div>
                 </div>
-                <div id="wishlists-content">
-                    <h4>Вишлисты пользователя</h4>
-                    <div id="wishlists-sort">
-                        <p>Сортировать</p>
-                        <select>
-                            <option>по дате мероприятия</option>
-                            <option>по новизне</option>
+                <div class="wishlists-content">
+                    <h2>Вишлисты пользователя</h2>
+                    <div class="wishlists-sort">
+                        <label for="sort-select">Сортировать</label>
+                        <select id="sort-select" name="sort">
+                            <option value="date">по дате мероприятия</option>
+                            <option value="new">по новизне</option>
                         </select>
                     </div>
                     <div class="wishlists-container">
-                        <article class="container wishlist">
+                        <article class="box wishlist">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
+                                        <h3>День рождения</h3>
+                                        <p class="text-accent">10.10.2026</p>
                                     </div>
-                                    <img src="images/action-menu-icon.svg">
                                 </div>
-                                <div id="reserved-gifts-counter">
+                                <div class="reserved-gifts-counter">
                                     <img src="images/lock-icon.svg">
-                                    <p>1/4</p>
+                                    <p>2/6</p>
                                 </div>
                             </div>
                             <div class="wishlist-items">
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                                 <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                            </div>
-                        </article>
-                        <article class="container wishlist">
-                            <div class="wishlist-info">
-                                <div class="wishlist-header">
-                                    <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
-                                    </div>
-                                    <img src="images/action-menu-icon.svg">
-                                </div>
-                                <div id="reserved-gifts-counter">
-                                    <img src="images/lock-icon.svg">
-                                    <p>1/4</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-items">
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                            </div>
-                        </article>
-                        <article class="container wishlist">
-                            <div class="wishlist-info">
-                                <div class="wishlist-header">
-                                    <div>
-                                        <h4>Название списка</h4>
-                                        <p>31.12.2025</p>
-                                    </div>
-                                    <img src="images/action-menu-icon.svg">
-                                </div>
-                                <div id="reserved-gifts-counter">
-                                    <img src="images/lock-icon.svg">
-                                    <p>1/4</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-items">
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="wishlist-item">
-                                    <img src="images/gift-icon.svg">
+                                    <img src="images/gift-icon.svg" alt="Фото подарка">
                                 </div>
                             </div>
                         </article>
@@ -157,10 +83,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
-                <a href="/"><img src="images/footer-logo.svg"></a>
+            <div class="footer-logo">
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>
