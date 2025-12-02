@@ -52,6 +52,11 @@ h3 {
 }
 
 h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h5 {
     font-size: 0.625rem;
     font-weight: 600;
 }
@@ -67,6 +72,7 @@ button {
     cursor: pointer;
     width: fit-content;
     font-family: inherit;
+    font-size: inherit;
 }
 
 label {
@@ -137,7 +143,6 @@ select:hover {
 }
 
 .button {
-    font-size: 1rem;
     padding: 15px 30px;
     border-radius: 50px;
 }
@@ -197,6 +202,10 @@ select:hover {
     font-weight: 600;
 }
 
+.text-secondary {
+    color: #888888;
+}
+
 .text-highlight {
     color: black;
     background-color: #FFCF68;
@@ -221,9 +230,53 @@ header .wrapper {
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    position: relative; 
+    padding-bottom: 10px; 
+    margin-bottom: -10px; 
+}
+
+.dropdown {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 0; 
+    width: 260px; 
+    background-color: #FFF;
+    border: 1px solid #C5C1D2;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+    flex-direction: column; 
+}
+
+.menu:hover .dropdown {
+    display: flex; 
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #F7F7F7;
+    color: #544388; 
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: #C5C1D2;
+    margin: 5px 0;
+}
+
+.dropdown-item.logout {
+    color: #544388; 
+}
+
+.dropdown-item.logout:hover {
+    background-color: #e4e1ec;
 }
 
 .header-controls {
@@ -457,7 +510,8 @@ header .wrapper {
     padding-left: 10px;
 }
 
-.wishlist-page .wrapper, .not-owner-wishlist-detail .wrapper {
+.wishlist-page .wrapper, 
+.not-owner-wishlist-detail .wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -807,9 +861,95 @@ header .wrapper {
     gap: 20px;
 }
 
-.account-info .profile-picture {
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info .profile-picture {
     width: 340px;
     height: 340px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-statistic {
+    display: flex;
+    gap: 20px;
+}
+
+.account-statistic-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 253px;
+}
+
+.account-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 472px;
+}
+
+.account-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-safety {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.switch {
+    display: flex;               
+    justify-content: space-between; 
+    align-items: center;         
+    width: 100%;                 
+    cursor: pointer;             
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: relative;         
+    display: block;              
+    width: 45px;                 
+    height: 25px;                
+    background-color: #C5C1D2;
+    border-radius: 30px;
+    transition: 300ms;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #FFF;
+    transition: 300ms;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #544388;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
 }
 
 .friend-list .wrapper {
@@ -832,40 +972,39 @@ header .wrapper {
   gap: 20px;
 }
 
-.tabs-toggle {
-  display: none;
+.tab {
+    padding: 15px 30px;
+    cursor: pointer;
+    border: 1px solid #C5C1D2;
+    border-radius: 10px;
+    background-color: #FFF;
 }
 
-.friend-list-content .tab-content {
-  display: none;
-}
-
-#tab-my-friends:checked ~ .friend-list-content #tab-content-my-friends,
-#tab-friend-requests:checked ~ .friend-list-content #tab-content-friend-requests {
-  display: block;
-}
-
-.tabs label {
-  padding: 15px 30px;
-  cursor: pointer;
-  border: 1px solid #C5C1D2;
-  border-radius: 10px;
-  background-color: #FFF;
-}
-
-#tab-my-friends:checked ~ .friend-list-header .tabs label[for="tab-my-friends"],
-#tab-friend-requests:checked ~ .friend-list-header .tabs label[for="tab-friend-requests"] {
+.tab.active {
   background-color: #544388;
+  border: 1px solid #544388;
   color: #FFF;
-  border-color: #544388;
   cursor: default;
 }
 
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab:not(.active):hover {
+    background-color: #B4A6DE;
+    border: 1px solid #B4A6DE;
+}
+
 .friend-list-header-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .friend-list-items {
@@ -946,24 +1085,55 @@ header .wrapper {
     height: 30px;
 }
 
-.gift-wishlist-info h6 {
-    font-family: Manrope;
-    font-size: 10px;
-    font-weight: 600;
-}
-
 .gift-wishlist-info p {
     color: #544388;
     font-size: 10px;
 }
 
-.buttons-container {
+.notifications .wrapper {
     display: flex;
-    gap: 9px;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
 }
 
-.buttons-container button {
-    padding: 15px 20px;
+.notifications-content .tab-content.active {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+.notifications-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notification {
+    display: flex;
+    gap: 20px;
+    max-width: 793px;
+}
+
+.notification.box {
+    padding: 10px;
+}
+
+.notification.box img {
+    width: 86px;
+    height: auto;
+}
+
+.notification-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notification-text-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 footer {

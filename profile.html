@@ -18,6 +18,15 @@
                 </button>
                 <nav class="menu">
                     <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
+                    <div class="dropdown">
+                        <a href="profile.html" class="dropdown-item">Профиль</a>
+                        <a href="my-wishlists.html" class="dropdown-item">Мои вишлисты</a>
+                        <a href="notifications.html" class="dropdown-item">Уведомления</a>
+                        <a href="friend-list.html" class="dropdown-item">Друзья</a>
+                        <a href="reserved-gifts.html" class="dropdown-item">Забронированные подарки</a>
+                        <div class="dropdown-divider"></div>   
+                        <a href="#" class="dropdown-item logout">Выход</a>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -27,11 +36,48 @@
             <div class="wrapper">
                 <h1>Профиль</h1>
                 <div class="profile-content">
-                    <div class="account-info box">
+                    <div class="user-info box">
                         <img class="profile-picture" src="images/default-avatar.svg" alt="Изображение профиля">
+                        <h2>Ася</h2>
+                        <p>pochta@gmail.com</p>
+                        <button class="button button-yellow" type="button">Редактировать</button>
+                        <a href="#" class="text-accent">Выйти из аккаунта</a>
                     </div>
-                    <div class="settings box">
-                        <h3>Настройки</h3>
+                    <div class="account-info">
+                        <div class="account-statistic">
+                            <div class="account-statistic-item box">
+                                <img src="images/list-icon.svg" alt="Иконка списка">
+                                <p>13 вишлистов</p>
+                            </div>
+                            <div class="account-statistic-item box">
+                                <img src="images/default-avatar.svg" alt="Иконка профиля">
+                                <p>3 друга</p>
+                            </div>
+                            <div class="account-statistic-item box">
+                                <img src="images/gift-in-hand-icon.svg" alt="Иконка подарка в руке">
+                                <p>2 подарка забронировано</p>
+                            </div>
+                        </div>
+                        <div class="account-control box">
+                            <div class="account-settings">
+                                <h3>Настройки</h3>
+                                <label class="switch">
+                                    Получать уведомления о забронированных подарках на Email
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <label class="switch">
+                                    Получать новости об изменениях на сайте на Email
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="account-safety">
+                                <h3>Безопасность</h3>
+                                <a href="#" class="text-accent">Сбросить пароль</a>
+                                <a href="#" class="text-danger">Удалить аккаунт</a> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

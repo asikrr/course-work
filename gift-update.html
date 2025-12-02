@@ -9,18 +9,24 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
-                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
+            <div class="header-logo">
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="my-wishlists.html">Мои вишлисты</a>
-                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                <nav class="menu">
+                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
+                    <div class="dropdown">
+                        <a href="profile.html" class="dropdown-item">Профиль</a>
+                        <a href="my-wishlists.html" class="dropdown-item">Мои вишлисты</a>
+                        <a href="notifications.html" class="dropdown-item">Уведомления</a>
+                        <a href="friend-list.html" class="dropdown-item">Друзья</a>
+                        <a href="reserved-gifts.html" class="dropdown-item">Забронированные подарки</a>
+                        <div class="dropdown-divider"></div>   
+                        <a href="#" class="dropdown-item logout">Выход</a>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -63,10 +69,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
-                <a href="/"><img src="images/footer-logo.svg"></a>
+            <div class="footer-logo">
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>
