@@ -9,75 +9,93 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="header-left">
-                <a href="/"><img src="images/header-logo.svg" alt="Логотип"></a>
+            <div class="header-logo">
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
             </div>
-            <div class="header-center">
-                <button class="theme-change-button">
+            <div class="header-controls">
+                <button class="button-icon" type="button">
                     <img src="images/dark-theme-icon.svg" alt="Смена темы">
                 </button>
-            </div>
-            <div class="header-right">
-                <nav>
-                    <a href="my-wishlists.html">Мои вишлисты</a>
-                    <a href="/"><img src="images/default-avatar.svg" alt="Аватарка"></a>
+                <nav class="menu">
+                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section id="wishlist-create">
+        <section class="wishlist-update">
             <div class="wrapper">
                 <h1>Редактирование вишлиста</h1>
-                <div id="wishlist-creation-form-container">
-                    <form id="wishlist-creation-form">
-                        <div id="wishlist-creation-form-top">
-                            <h4>Информация о вишлисте</h4>
+                <div class="wishlist-form-container">
+                    <form id="wishlist-update-form">
+                        <div class="wishlist-form-info">
+                            <h3>Информация о вишлисте</h3>
                             <div class="form-fields">
-                                <div id="form-fields-top">
+                                <div class="form-fields-main">
                                     <div class="form-field">
-                                        <label for="title">Название</label>
-                                        <input type="text" id="title" name="title" value="Название списка">
+                                        <label for="title">Название <span class="text-accent">*</span></label>
+                                        <input type="text" id="title" name="title" value="Новый год" required>
                                     </div>
                                     <div class="form-field">
                                         <label for="date">Дата мероприятия</label>
                                         <input type="date" id="date" name="date" value="2025-12-31">
                                     </div>
                                 </div>
-                                <div id="form-fields-bottom">
+                                <div class="form-fields-description">
                                     <label for="description">Описание</label>
-                                    <textarea name="description" id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</textarea>
+                                    <textarea name="description" id="description">Это список желаний на Новый год! Буду рада любому подарку из списка</textarea>
                                 </div>
                             </div>
                         </div>
-                        <div id="wishlist-creation-form-middle">
-                            <h4>Настройки</h4>
+                        <div class="wishlist-form-settings">
+                            <h3>Настройки</h3>
                             <div>
                                 <p>Как будут отображаться забронированные подарки?</p>
-                                <div id="wishlist-filter-choices">
-                                    <div class="wishlist-filter-choice">
-                                        <input type="radio" name="wishlist-filter-choice" value="show-names" id="choice-show-names" checked>
+                                <div id="reserved-gifts-display">
+                                    <div class="reserved-gifts-display-choice">
+                                        <input type="radio" name="reserved-gifts-display-choice" value="show-names" id="choice-show-names" checked>
                                         <label for="choice-show-names">С именами</label>
                                     </div>
-                                    <div class="wishlist-filter-choice">
-                                        <input type="radio" name="wishlist-filter-choice" value="not-show-names" id="choice-not-show-names">
+                                    <div class="reserved-gifts-display-choice">
+                                        <input type="radio" name="reserved-gifts-display-choice" value="not-show-names" id="choice-not-show-names">
                                         <label for="choice-not-show-names">Без имен</label>
                                     </div>
-                                    <div class="wishlist-filter-choice">
-                                        <input type="radio" name="wishlist-filter-choice" value="show-nothing" id="choice-show-nothing">
+                                    <div class="reserved-gifts-display-choice">
+                                        <input type="radio" name="reserved-gifts-display-choice" value="show-nothing" id="choice-show-nothing">
                                         <label for="choice-show-nothing">Не показывать, какие подарки забронированы</label>
                                     </div>          
                                 </div>
                             </div>
-                        </div>
-                        <div id="wishlist-creation-form-bottom">
-                            <h4>Уведомления</h4>
                             <div>
-                                <input type="checkbox" id="send-notifications">
+                                <p>Кто видит вишлист?</p>
+                                <div id="wishlist-visibility">
+                                    <div class="wishlist-visibility-choice">
+                                        <input type="radio" name="wishlist-visibility-choice" value="link-and-friends" id="choice-link-and-friends" checked>
+                                        <label for="choice-link-and-friends">Те, у кого есть ссылка и друзья</label>
+                                    </div>
+                                    <div class="wishlist-visibility-choice">
+                                        <input type="radio" name="wishlist-visibility-choice" value="only-friends" id="choice-only-friends">
+                                        <label for="choice-only-friends">Только друзья</label>
+                                    </div>
+                                    <div class="wishlist-visibility-choice">
+                                        <input type="radio" name="wishlist-visibility-choice" value="only-me" id="choice-only-me">
+                                        <label for="choice-only-me">Только я</label>
+                                    </div>          
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wishlist-form-notifications">
+                            <h3>Уведомления</h3>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    id="send-notifications"
+                                    name="send-notifications"
+                                    value="yes">
                                 <label for="send-notifications">Отправлять уведомления, когда подарок забронирован</label>
                             </div>
                         </div>
-                        <button type="submit" id="save-button">Сохранить</button>
+                        <button type="submit" class="button button-yellow">Сохранить</button>
                     </form>
                 </div>
             </div>
@@ -85,10 +103,10 @@
     </main>
     <footer>
         <div class="wrapper">
-            <div class="logo-container">
-                <a href="/"><img src="images/footer-logo.svg"></a>
+            <div class="footer-logo">
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
             </div>
-            <p>&copy;WishCraft 2025</p>
+            <p>&copy; WishCraft 2025</p>
         </div>
     </footer>
 </body>

@@ -32,26 +32,35 @@ a {
     font-size: 1rem;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: Manrope;
-    font-style: bold;
-    font-size: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 h2 {
-    font-family: Manrope;
-    font-style: bold;
-    font-size: 36px; 
+    font-size: 2.25rem; 
+    font-weight: 700;
 }
 
 h3 {
-    font-family: Manrope;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 p {
     font-size: 1rem;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    width: fit-content;
 }
 
 label {
@@ -61,48 +70,37 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="date"] {
+input[type="date"],
+textarea {
     border-radius: 10px;
-    border: 1px solid #A69BC8;
+    border: 1px solid #C5C1D2;
     outline: none;
-    height: 50px;
     padding: 10px 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    height: 50px;
     width: 340px;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
-input[type="date"]:focus {
+input[type="date"]:focus,
+textarea:focus {
     border-color: #544388;
+}
+
+textarea {
+    resize: none;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     accent-color: #544388;
-}
-
-textarea {
-    resize: none;
-    border-radius: 10px;
-    border-color: #544388;
-    border-width: 1px;
-    outline: none;
-    padding: 10px 15px;
-}
-
-.wrapper {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    padding-top: 70px;
-    padding-bottom: 100px;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
 select {
@@ -117,18 +115,19 @@ select:hover {
     cursor: pointer;
 }
 
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
 .box {
     background-color: #FFF;
     border-radius: 20px;
     outline: 1px solid #C5C1D2;
     padding: 20px;
-}
-
-button {
-    border: none;
-    text-decoration: none;
-    background: none;
-    cursor: pointer;
 }
 
 .button {
@@ -213,6 +212,12 @@ header .wrapper {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .header-controls {
@@ -348,6 +353,49 @@ header .wrapper {
     border-radius: 20px;
     width: 102px;
     height: 102px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination-link,
+.pagination-current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    color: #000;
+    border: 1px solid #C5C1D2;
+    border-radius: 10px;
+}
+
+.pagination-link {
+    background-color: #FFF;
+}
+
+.pagination-link:hover {
+    background-color: #A69BC8;
+    border: none;
+}
+
+.pagination-current,
+.pagination-current:hover {
+    background-color: #544388;
+    color: white;
+    border-color: #544388;
+}
+
+.pagination-disabled,
+.pagination-disabled:hover {
+    color: #D9D9D9;
+    background-color: transparent;
+    cursor: default;
+    border: 1px solid #C5C1D2;
 }
 
 .register, .login {
@@ -607,49 +655,6 @@ header .wrapper {
     height: 70px;
 }
 
-.pagination {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 10px;
-}
-
-.pagination-link,
-.pagination-current {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    color: #000;
-    border: 1px solid #C5C1D2;
-    border-radius: 10px;
-}
-
-.pagination-link {
-    background-color: #FFF;
-}
-
-.pagination-link:hover {
-    background-color: #A69BC8;
-    border: none;
-}
-
-.pagination-current,
-.pagination-current:hover {
-    background-color: #544388;
-    color: white;
-    border-color: #544388;
-}
-
-.pagination-disabled,
-.pagination-disabled:hover {
-    color: #D9D9D9;
-    background-color: transparent;
-    cursor: default;
-    border: 1px solid #C5C1D2;
-}
-
 .form-fields {
     display: flex;
     flex-direction: column;
@@ -662,82 +667,87 @@ header .wrapper {
     gap: 2px;
 }
 
-#wishlist-creation-form,
-#gift-creation-form {
+#wishlist-create-form,
+#wishlist-update-form,
+#gift-create-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#wishlist-creation-form-container,
-#gift-creation-form-container {
+.wishlist-form-container,
+.gift-form-container {
     background-color: white;
     padding: 20px;
     border-radius: 20px;
 }
 
-#wishlist-create .wrapper {
+.wishlist-create .wrapper,
+.wishlist-update .wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#wishlist-creation-form-top,
-#wishlist-creation-form-middle,
-#wishlist-creation-form-bottom {
+.wishlist-form-info,
+.wishlist-form-settings,
+.wishlist-form-notifications {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#wishlist-creation-form-top label {
+.wishlist-form-info label {
     padding-left: 10px;
 }
 
-#wishlist-creation-form-middle > div {
+.wishlist-form-settings > div {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-#wishlist-creation-form-bottom > div {
+.wishlist-form-notifications > div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#form-fields-top {
+.reserved-gifts-display-choice, 
+.wishlist-visibility-choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-fields-main {
     display: flex;
     gap: 20px;
 }
 
-#form-fields-top input {
+.form-fields-main input {
     display: flex;
     gap: 20px;
 }
 
-#form-fields-bottom {
+.form-fields-description {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-#form-fields-bottom {
+.form-fields-description {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-#form-fields-bottom textarea {
+.form-fields-description textarea {
     width: 700px;
-    height: 130px;
+    height: 90px;
 }
 
-#save-button {
-    width: fit-content;
-}
-
-#gift-creation-form #gift-image-label {
+#gift-create-form #gift-image-label {
     display: block;
     background-color: #D9D9D9;
     height: 235px;
