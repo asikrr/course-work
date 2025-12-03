@@ -32,36 +32,49 @@
         </div>
     </header>
     <main>
-        <section id="wishlist-create">
+        <section class="gift-create">
             <div class="wrapper">
                 <h1>Добавление подарка</h1>
-                <div id="gift-creation-form-container">
-                    <form id="gift-creation-form" enctype="multipart/form-data">
-                        <div id="gift-creation-form-top">
-                            <label for="gift-image-input" id="gift-image-label"></label>
-                            <input type="file" id="gift-image-input" name="gift-image" accept="image/*" style="display: none;">
+                <div class="box">
+                    <form id="gift-create-form" enctype="multipart/form-data" class="form-layout">
+                        <div class="form-column-image">
+                            <div class="image-upload-wrapper">
+                                <label for="gift-image-input" id="gift-image-label"></label>
+                                <input type="file" id="gift-image-input" name="gift-image" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="form-column-content">
                             <div class="form-fields">
                                 <div class="form-field">
-                                    <label for="title">Название</label>
-                                    <input type="text" id="title" name="title">
+                                    <label for="title">Название <span class="text-accent">*</span></label>
+                                    <input type="text" id="title" name="title" required>
                                 </div>
                                 <div class="form-field">
-                                    <label for="price">Цена</label>
-                                    <input type="text" id="price" name="price">
-                                </div>
-                                <div class="form-field">
-                                    <label for="link">Ссылка</label>
+                                    <label for="link">Ссылка на товар</label>
                                     <input type="text" id="link" name="link">
                                 </div>
+                                <div class="price-container">
+                                    <div class="form-field">
+                                        <label for="price">Цена</label>
+                                        <input type="text" id="price" name="price">
+                                    </div>
+                                    <select class="currency-select">
+                                        <option>₽</option>
+                                        <option>$</option>
+                                        <option>€</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="gift-comment">Комментарий к подарку</label>
+                                    <textarea name="gift-comment" id="gift-comment"></textarea>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="priority-choice">
+                                    <label for="priority-choice">Приоритетный товар</label>
+                                </div>
                             </div>
+                            <button type="submit" class="button button-yellow">Сохранить</button>
                         </div>
-                        <div id="gift-creation-form-bottom">
-                            <div class="form-field">
-                                <label for="gift-comment">Комментарий к подарку</label>
-                                <textarea name="gift-comment" id="gift-comment"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" id="save-button">Сохранить</button>
                     </form>
                 </div>
             </div>

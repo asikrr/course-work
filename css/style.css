@@ -230,6 +230,8 @@ header .wrapper {
 }
 
 .menu {
+    display: flex;
+    gap: 20px;
     position: relative; 
     padding-bottom: 10px; 
     margin-bottom: -10px; 
@@ -739,8 +741,7 @@ header .wrapper {
 }
 
 #wishlist-create-form,
-#wishlist-update-form,
-#gift-create-form {
+#wishlist-update-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -818,9 +819,24 @@ header .wrapper {
     height: 90px;
 }
 
-#gift-create-form #gift-image-label {
+.gift-create .wrapper,
+.gift-update .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+#gift-create-form,
+#gift-update-form {
+    display: flex;
+    gap: 20px;
+}
+
+#gift-create-form #gift-image-label,
+#gift-update-form #gift-image-label {
     display: block;
-    background-color: #D9D9D9;
+    background-color: #C5C1D2;
     height: 235px;
     width: 199px;
     border-radius: 20px;
@@ -830,24 +846,35 @@ header .wrapper {
     cursor: pointer;
 }
 
-#gift-creation-form label {
-    padding-left: 10px;
+#gift-create-form input[type="file"],
+#gift-update-form input[type="file"] {
+    display: none;
 }
 
-#gift-creation-form-top {
+.form-column-content {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
-#gift-creation-form-bottom .form-field {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+.form-column-content label {
+    padding-left: 10px;
 }
 
-#gift-creation-form-bottom .form-field textarea {
-    width: 560px;
-    height: 100px;
+.price-container {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.currency-select {
+    height: 50px;
+    width: 60px;
+}
+
+#gift-comment {
+    width: 421px;
+    height: 87px;
 }
 
 .profile .wrapper {
