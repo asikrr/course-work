@@ -39,6 +39,20 @@
                         <div class="wishlist-title">
                             <h1>Новый год</h1>
                         </div>
+                        <div class="wishlist-actions">
+                            <button type="button" class="button-icon">
+                                <img src="images/share-link-icon.svg" alt="Поделиться">
+                            </button>
+                            <a href="#" class="button-icon">
+                                <img src="images/pencil-icon.svg" alt="Редактировать">
+                            </a>
+                            <button type="button" class="button-icon">
+                                <img src="images/pin-icon.svg" alt="Закрепить">
+                            </button>
+                            <button type="button" class="button-icon">
+                                <img src="images/trash-can-icon.svg" alt="Удалить">
+                            </button>
+                        </div>
                     </div>
                     <div class="wishlist-date-info">
                         <p class="wishlist-date text-accent">31.12.2025</p>
@@ -53,6 +67,7 @@
                                 <img src="images/lock-icon.svg">
                                 <p>1/4</p>
                             </div>
+                            <a href="#" class="button button-yellow">Добавить товар</a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +78,7 @@
                             <select>
                                 <option>сначала дешевле</option>
                                 <option>сначала дороже</option>
-                                <option>по дате добавления</option>
+                                <option>по дате мероприятия</option>
                             </select>
                         </div>
                         <div class="wishlist-filter">
@@ -88,104 +103,103 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wishlist-gifts">
-                        <div class="gifts-list">
-                            <article class="gift gift-priority box">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
+                    <div class="gifts-container">
+                        <article class="gift gift-priority box">
+                            <div class="gift-image">
+                                <img src="images/gift-icon.svg">
+                            </div>
+                            <div class="gift-body">
+                                <div class="gift-header">
+                                    <div class="gift-header-info">
+                                        <h3 class="gift-title">Наушники</h3>
+                                        <p class="gift-price text-accent">5000р</p>
+                                    </div>
+                                    <div class="gift-header-actions">
+                                        <img src="images/fire-icon.svg">
+                                    </div>
                                 </div>
-                                <div class="gift-body">
+                                <div class="gift-actions">
+                                    <button type="button" class="button button-purple-border">Забронировать</button>
+                                    <a href="#" class="button button-purple">Перейти в магазин</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="gift gift-reserved box">
+                            <div class="gift-image">
+                                <img src="images/gift-icon.svg">
+                            </div>
+                            <div class="gift-body">
+                                <div class="gift-content">
+                                    <p class="text-highlight">Забронирован</p>
                                     <div class="gift-header">
                                         <div class="gift-header-info">
-                                            <h3 class="gift-title">Наушники</h3>
-                                            <p class="gift-price text-accent">5000р</p>
+                                            <h3 class="gift-title">Кружка</h3>
+                                            <p class="gift-price text-accent">500р</p>
                                         </div>
                                         <div class="gift-header-actions">
-                                            <img src="images/fire-icon.svg">
                                         </div>
                                     </div>
-                                    <div class="gift-actions">
-                                        <button type="button" class="button button-purple-border">Забронировать</button>
-                                        <a href="#" class="button button-purple">Перейти в магазин</a>
+                                    <div class="gift-comment">
+                                        <p>Комментарий</p>
+                                        <button type="button" class="button-icon">
+                                            <img src="images/arrow-icon.svg">
+                                        </button>
                                     </div>
                                 </div>
-                            </article>
-                            <article class="gift gift-reserved box">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
+                                <div class="gift-actions">
+                                    <button type="button" class="button button-purple-border">Забронировать</button>
+                                    <a href="#" class="button button-purple">Перейти в магазин</a>
                                 </div>
-                                <div class="gift-body">
-                                    <div class="gift-content">
-                                        <p class="text-highlight">Забронирован</p>
-                                        <div class="gift-header">
-                                            <div class="gift-header-info">
-                                                <h3 class="gift-title">Кружка</h3>
-                                                <p class="gift-price text-accent">500р</p>
-                                            </div>
-                                            <div class="gift-header-actions">
-                                            </div>
+                            </div>
+                        </article>
+                        <article class="gift box">
+                            <div class="gift-image">
+                                <img src="images/gift-icon.svg">
+                            </div>
+                            <div class="gift-body">
+                                <div class="gift-content">
+                                    <div class="gift-header">
+                                        <div class="gift-header-info">
+                                            <h3 class="gift-title">Худи</h3>
+                                            <p class="gift-price text-accent">1900р</p>
                                         </div>
-                                        <div class="gift-comment">
-                                            <p>Комментарий</p>
-                                            <button type="button" class="button-icon">
-                                                <img src="images/arrow-icon.svg">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="gift-actions">
-                                        <a href="#" class="button button-purple">Перейти в магазин</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="gift box">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
-                                </div>
-                                <div class="gift-body">
-                                    <div class="gift-content">
-                                        <div class="gift-header">
-                                            <div class="gift-header-info">
-                                                <h3 class="gift-title">Худи</h3>
-                                                <p class="gift-price text-accent">1900р</p>
-                                            </div>
-                                            <div class="gift-header-actions">
-                                            </div>
-                                        </div>
-                                        <div class="gift-comment">
-                                            <p>Комментарий</p>
-                                            <button type="button" class="button-icon">
-                                                <img src="images/arrow-icon.svg">
-                                            </button>
+                                        <div class="gift-header-actions">
                                         </div>
                                     </div>
-                                    <div class="gift-actions">
-                                        <button type="button" class="button button-purple-border">Забронировать</button>
-                                        <a href="#" class="button button-purple">Перейти в магазин</a>
+                                    <div class="gift-comment">
+                                        <p>Комментарий</p>
+                                        <button type="button" class="button-icon">
+                                            <img src="images/arrow-icon.svg">
+                                        </button>
                                     </div>
                                 </div>
-                            </article>
-                            <article class="gift box">
-                                <div class="gift-image">
-                                    <img src="images/gift-icon.svg">
+                                <div class="gift-actions">
+                                    <button type="button" class="button button-purple-border">Забронировать</button>
+                                    <a href="#" class="button button-purple">Перейти в магазин</a>
                                 </div>
-                                <div class="gift-body">
-                                    <div class="gift-content">
-                                        <div class="gift-header">
-                                            <div class="gift-header-info">
-                                                <h3 class="gift-title">Сумка</h3>
-                                                <p class="gift-price text-accent">800р</p>
-                                            </div>
-                                            <div class="gift-header-actions">
-                                            </div>
+                            </div>
+                        </article>
+                        <article class="gift box">
+                            <div class="gift-image">
+                                <img src="images/gift-icon.svg">
+                            </div>
+                            <div class="gift-body">
+                                <div class="gift-content">
+                                    <div class="gift-header">
+                                        <div class="gift-header-info">
+                                            <h3 class="gift-title">Сумка</h3>
+                                            <p class="gift-price text-accent">800р</p>
+                                        </div>
+                                        <div class="gift-header-actions">
                                         </div>
                                     </div>
-                                    <div class="gift-actions">
-                                        <button type="button" class="button button-purple-border">Забронировать</button>
-                                        <a href="#" class="button button-purple">Перейти в магазин</a>
-                                    </div>
                                 </div>
-                            </article>
-                        </div>
+                                <div class="gift-actions">
+                                    <button type="button" class="button button-purple-border">Забронировать</button>
+                                    <a href="#" class="button button-purple">Перейти в магазин</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>

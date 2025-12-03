@@ -72,7 +72,7 @@ button {
     cursor: pointer;
     width: fit-content;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 1rem;
 }
 
 label {
@@ -895,6 +895,13 @@ header .wrapper {
     gap: 20px;
 }
 
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .user-info .profile-picture {
     width: 340px;
     height: 340px;
@@ -1173,4 +1180,67 @@ footer .wrapper{
     align-items: center;
     padding: 60px 0;
     color: white;
+}
+
+@media(max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        max-width: 95vw;
+    }
+
+    .site-info-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .site-info-content > img {
+        rotate: 90deg;
+    }
+
+    .register .box,
+    .login .box {
+        justify-content: center;
+        height: 625px;
+    }
+
+    .authentication-image-container {
+        display: none;
+    }
+
+    .wishlists-container {
+        gap: 10px;
+    }
+
+    .wishlist {
+        width: 360px;
+    }
+
+    .wishlist-items {
+        gap: 10px;
+    }
+
+    .wishlist-item {
+        height: 100px;
+        width: 100px;
+    }
+
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .user-info {
+        flex-direction: row;
+    }
+
+    .user-info .profile-picture {
+        width: 250px;
+        height: 250px;
+    }
+
+    .user-details {
+        align-items: start;
+    }
 }
