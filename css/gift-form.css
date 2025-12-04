@@ -14,20 +14,32 @@
 
 #gift-create-form #gift-image-label,
 #gift-update-form #gift-image-label {
-    display: block;
-    background-color: #C5C1D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 235px;
     width: 199px;
     border-radius: 20px;
-    background-image: url("../images/add-photo-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
 }
 
+#gift-create-form #gift-image-label {
+    background-color: #C5C1D2;
+}
+
+#gift-update-form #gift-image-label {
+    background-image: url("../images/mug-image.png");
+}
+
 #gift-create-form input[type="file"],
 #gift-update-form input[type="file"] {
     display: none;
+}
+
+#gift-comment {
+    max-width: 420px;
 }
 
 .form-column-content {

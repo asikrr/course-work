@@ -39,8 +39,10 @@
                 <div class="box">
                     <form id="gift-create-form" enctype="multipart/form-data" class="form-layout">
                         <div class="form-column-image">
-                            <div class="image-upload-wrapper">
-                                <label for="gift-image-input" id="gift-image-label"></label>
+                            <div class="image-upload-container">
+                                <label for="gift-image-input" id="gift-image-label">
+                                    <img src="images/add-photo-icon.svg" alt="Добавить фото">
+                                </label>
                                 <input type="file" id="gift-image-input" name="gift-image" accept="image/*">
                             </div>
                         </div>
@@ -51,8 +53,8 @@
                                     <input type="text" id="title" name="title" required>
                                 </div>
                                 <div class="form-field">
-                                    <label for="link">Ссылка на товар</label>
-                                    <input type="text" id="link" name="link">
+                                    <label for="gift-link">Ссылка на товар</label>
+                                    <input type="text" id="gift-link" name="gift-link">
                                 </div>
                                 <div class="price-container">
                                     <div class="form-field">

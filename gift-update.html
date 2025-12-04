@@ -39,8 +39,10 @@
                 <div class="box">
                     <form id="gift-update-form" enctype="multipart/form-data" class="form-layout">
                         <div class="form-column-image">
-                            <div class="image-upload-wrapper">
-                                <label for="gift-image-input" id="gift-image-label"></label>
+                            <div class="image-upload-container">
+                                <label for="gift-image-input" id="gift-image-label">
+                                    <img src="images/add-photo-icon.svg" alt="Добавить фото">
+                                </label>
                                 <input type="file" id="gift-image-input" name="gift-image" accept="image/*">
                             </div>
                         </div>
@@ -48,16 +50,16 @@
                             <div class="form-fields">
                                 <div class="form-field">
                                     <label for="title">Название <span class="text-accent">*</span></label>
-                                    <input type="text" id="title" name="title" required>
+                                    <input type="text" id="title" name="title" value="Кружка" required>
                                 </div>
                                 <div class="form-field">
-                                    <label for="link">Ссылка на товар</label>
-                                    <input type="text" id="link" name="link">
+                                    <label for="gift-link">Ссылка на товар</label>
+                                    <input type="text" id="gift-link" name="gift-link" value="https://www.ozon.ru/product/">
                                 </div>
                                 <div class="price-container">
                                     <div class="form-field">
                                         <label for="price">Цена</label>
-                                        <input type="text" id="price" name="price">
+                                        <input type="text" id="price" name="price" value="500">
                                     </div>
                                     <select class="currency-select">
                                         <option>₽</option>
