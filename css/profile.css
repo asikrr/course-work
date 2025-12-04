@@ -1,0 +1,91 @@
+.profile .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-content {
+    display: flex;
+    gap: 20px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info .profile-picture {
+    width: 340px;
+    height: 340px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-statistic {
+    display: flex;
+    gap: 20px;
+}
+
+.account-statistic-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    width: 253px;
+}
+
+.account-statistic-item:hover {
+    scale: 1.1;
+    transition: 300ms;
+}
+
+.account-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 472px;
+}
+
+.account-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-safety {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media(max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .user-info {
+        flex-direction: row;
+    }
+
+    .user-info .profile-picture {
+        width: 250px;
+        height: 250px;
+    }
+
+    .user-details {
+        align-items: start;
+    }
+}

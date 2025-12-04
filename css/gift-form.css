@@ -1,0 +1,59 @@
+.gift-create .wrapper,
+.gift-update .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+#gift-create-form,
+#gift-update-form {
+    display: flex;
+    gap: 20px;
+}
+
+#gift-create-form #gift-image-label,
+#gift-update-form #gift-image-label {
+    display: block;
+    background-color: #C5C1D2;
+    height: 235px;
+    width: 199px;
+    border-radius: 20px;
+    background-image: url("../images/add-photo-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#gift-create-form input[type="file"],
+#gift-update-form input[type="file"] {
+    display: none;
+}
+
+.form-column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-column-content label {
+    padding-left: 10px;
+}
+
+.price-container {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.currency-select {
+    height: 50px;
+    width: 60px;
+}
+
+@media(max-width: 768px) {
+    #gift-create-form,
+    #gift-update-form {
+        flex-direction: column;
+    }
+}

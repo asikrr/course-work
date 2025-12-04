@@ -1,0 +1,128 @@
+.wishlists .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+.wishlists-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.wishlists-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wishlists-sort {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.wishlists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.wishlist {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+
+.wishlist-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.wishlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.reserved-gifts-counter {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+    align-self: flex-end;
+}
+
+.wishlist-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.wishlist-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5C1D2;
+    border-radius: 20px;
+    width: 100%;
+    height: 102px;
+    position: relative;
+}
+
+.wishlist-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.wishlist-item-default {
+    height: auto;
+    width: auto;
+}
+
+.user-wishlists {
+    min-height: 100vh;
+}
+
+.user-wishlists .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+.wishlists-content {
+    gap: 20px;
+}
+
+.wishlists-owner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wishlists-owner img {
+    width: 200px;
+    height: 200px;
+}
+
+.wishlists-owner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media(max-width: 768px) {
+    .wishlists-controls {
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

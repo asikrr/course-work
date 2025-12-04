@@ -1,0 +1,63 @@
+.friend-list .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+.friend-list-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.friend-list-header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.friend-list-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.friend-list-items .box {
+    padding: 10px;
+}
+
+.friend-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 386px;
+}
+
+.friend-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media(max-width: 768px) {
+    .friend-list-header-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .friend-list-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        height: auto;
+    }
+
+    .friend-info {
+        flex-direction: column;
+    }
+}

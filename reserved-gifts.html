@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Забронированные вами</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gifts.css">
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
                         <a href="friend-list.html" class="dropdown-item">Друзья</a>
                         <a href="reserved-gifts.html" class="dropdown-item">Забронированные подарки</a>
                         <div class="dropdown-divider"></div>   
-                        <a href="#" class="dropdown-item logout">Выход</a>
+                        <a href="/" class="dropdown-item logout">Выход</a>
                     </div>
                 </nav>
             </div>
@@ -68,10 +69,10 @@
                     <img src="images/filter-icon.svg" class="button-icon wishlist-controls-icon">
                     <div class="gifts-container">
                         <article class="gift box">
-                            <div class="gift-image">
-                                <img src="images/gift-icon.svg">
+                            <div class="gift-image-container">
+                                <img src="images/watch-image.png">
                                 <div class="wishlist-owner-info box">
-                                    <img src="images/default-avatar.svg">
+                                    <img src="images/default-avatar.svg" class="gift-image">
                                     <div>
                                         <h5>Олег</h5>
                                         <p class="text-accent">День рождения</p>
@@ -83,6 +84,35 @@
                                     <div class="gift-header-info">
                                         <h3 class="gift-title">Часы</h3>
                                         <p class="gift-price text-accent">3800р</p>
+                                    </div>
+                                    <div class="gift-header-actions">
+                                        <button type="button" class="button-icon">
+                                            <img src="images/action-menu-icon.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="gift-actions">
+                                    <button type="button" class="button button-red">Отмена брони</button>
+                                    <a href="#" class="button button-purple">В магазин</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="gift box">
+                            <div class="gift-image-container">
+                                <img src="images/speaker-image.png" class="gift-image">
+                                <div class="wishlist-owner-info box">
+                                    <img src="images/default-avatar.svg">
+                                    <div>
+                                        <h5>Олег</h5>
+                                        <p class="text-accent">День рождения</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gift-body">
+                                <div class="gift-header">
+                                    <div class="gift-header-info">
+                                        <h3 class="gift-title">Колонка</h3>
+                                        <p class="gift-price text-accent">3400р</p>
                                     </div>
                                     <div class="gift-header-actions">
                                         <button type="button" class="button-icon">
