@@ -35,32 +35,27 @@ a {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     font-family: Manrope;
 }
 
-h1 {
+.large-headline {
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-h2 {
+.medium-headline {
     font-size: 2rem; 
     font-weight: 700;
 }
 
-h3 {
+.small-headline {
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-h4 {
+.extra-small-headline {
     font-size: 1rem;
-    font-weight: 600;
-}
-
-h5 {
-    font-size: 0.825rem;
     font-weight: 600;
 }
 
@@ -163,42 +158,42 @@ select {
     text-align: center;
 }
 
-.button-yellow {
+.button-accent {
     background-color: #FFCF68;
     color: #000;
 }
 
-.button-yellow:hover {
+.button-accent:hover {
     background-color: #EFB537;
     color: #000;
 }
 
-.button-purple {
+.button-regular {
     background-color: #544388;
     color: #FFF;
 }
 
-.button-purple:hover {
+.button-regular:hover {
     background-color: #3C2A71;
 }
 
-.button-purple-border {
+.button-regular-border {
     background-color: #FFF;
     color: #000;
     border: 1px solid #544388;
 }
 
-.button-purple-border:hover {
+.button-regular-border:hover {
     background-color: #544388;
     color: #FFF;
 }
 
-.button-red {
+.button-danger {
     background-color: #C34D4D;
     color: #FFF;
 }
 
-.button-red:hover {
+.button-danger:hover {
     background-color: #9E2D2D;
     color: #FFF;
 }
@@ -482,11 +477,11 @@ footer .wrapper{
 }
 
 @media(max-width: 360px) {
-    h1 {
+    .large-headline {
         font-size: 2rem;
     }
 
-    h2 {
+    .medium-headline {
         font-size: 1.5rem; 
     }
 }
