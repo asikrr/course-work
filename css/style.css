@@ -374,17 +374,15 @@ header .wrapper {
 }
 
 .wishlists-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    column-gap: 20px;
 }
 
 .wishlist {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 386px;
 }
 
 .wishlist-info {
@@ -399,9 +397,10 @@ header .wrapper {
 }
 
 .wishlist-items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 20px;
+    width: 100%;
 }
 
 .wishlist-item {
@@ -410,8 +409,24 @@ header .wrapper {
     align-items: center;
     background-color: #C5C1D2;
     border-radius: 20px;
-    width: 102px;
+    width: 100%;
     height: 102px;
+    position: relative;
+}
+
+.wishlist-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.wishlist-item-default {
+    height: auto;
+    width: auto;
 }
 
 .pagination {
@@ -534,6 +549,10 @@ header .wrapper {
     height: 51px;
 }
 
+.wishlist-controls-icon {
+    display: none;
+}
+
 .wishlist-page-header {
     display: flex;
     flex-direction: column;
@@ -597,6 +616,7 @@ header .wrapper {
 .wishlist-content {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .wishlist-gifts, 
@@ -615,7 +635,7 @@ header .wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 272px;
+    min-width: 272px;
     height: fit-content;
     padding: 20px;
     position: sticky;
@@ -643,21 +663,21 @@ header .wrapper {
 }
 
 .gifts-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 908px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
+    width: 100%;
 }
 
-.gifts-container > .box {
+.gift.box {
     padding: 0;
 }
 
 .gift {
     display: flex;
-    aspect-ratio: 444 / 234;
-    max-width: 444px;
-    flex: 1 1 350px;
+    height: 234px;
+    width: 100%;
+    min-width: 350px;
 }
 
 .priority {
@@ -670,7 +690,7 @@ header .wrapper {
     justify-content: space-between;
     gap: 5px;
     padding: 20px;
-    width: 245px;
+    width: 100%;
 }
 
 .gift-content {
@@ -701,7 +721,7 @@ header .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 199px;
+    min-width: 199px;
     background-color: #C5C1D2;
     border-radius: 20px;
     position: relative;
@@ -953,6 +973,7 @@ header .wrapper {
     background-color: #C5C1D2;
     border-radius: 30px;
     transition: 300ms;
+    flex-shrink: 0;
 }
 
 .slider:before {
@@ -1176,7 +1197,7 @@ footer .wrapper{
         max-width: 95vw;
     }
 
-    .wishlist-content {
+    .wishlist-content, .reserved-gifts {
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -1227,22 +1248,10 @@ footer .wrapper{
         display: none;
     }
 
-    .wishlists-container {
-        column-gap: 0;
-        justify-content: space-between;
-    }
-
-    .wishlist {
-        width: 360px;
-    }
-
-    .wishlist-items {
-        gap: 10px;
-    }
-
-    .wishlist-item {
-        height: 100px;
-        width: 100px;
+    .wishlists-controls {
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .wishlist-page-header {
@@ -1258,8 +1267,33 @@ footer .wrapper{
         gap: 20px;
     }
 
+    .wishlist-controls {
+        display: none;
+    }
+
+    .wishlist-controls-icon {
+        display: block;
+        align-self: end;
+    }
+
     .gifts-container {
         justify-content: center;
+    }
+
+    .gift {
+        height: 220px;
+    }
+
+    .gift-image {
+        min-width: 145px;
+    }
+
+    .gifts-container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .gift-body .button {
+        padding: 15px 30px;
     }
 
     .profile-content {
@@ -1309,6 +1343,12 @@ footer .wrapper{
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+
+    .header-logo img,
+    .footer-logo img {
+        height: 40px;
+        width: auto;
     }
 
     footer .wrapper {
