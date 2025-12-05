@@ -130,6 +130,10 @@
 }
 
 @media(max-width: 360px) {
+    .wishlists .wrapper h1 {
+        align-self: center;
+    }
+    
     .wishlists-owner {
         flex-wrap: wrap;
         justify-content: center;
@@ -139,7 +143,15 @@
         align-items: center;
     }
 
-    .wishlists-content {
+    .wishlists-controls {
         align-items: center;
+    }
+
+    .wishlists-content h2 {
+        align-self: center;
+    }
+
+    .wishlists-sort {
+        align-self: center;
     }
 }

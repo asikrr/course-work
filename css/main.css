@@ -264,7 +264,8 @@ select {
     justify-content: space-between; 
     align-items: center;         
     width: 100%;                 
-    cursor: pointer;             
+    cursor: pointer;
+    gap: 50px;             
 }
 
 .switch input {

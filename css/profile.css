@@ -32,10 +32,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .account-statistic {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(253px, 1fr));
     gap: 20px;
 }
 
@@ -44,7 +46,7 @@
     align-items: center;
     position: relative;
     gap: 20px;
-    width: 253px;
+    min-width: 253px;
 }
 
 .account-statistic-item:hover {
@@ -71,7 +73,7 @@
     gap: 20px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1200px) {
     .profile-content {
         flex-direction: column;
     }
@@ -87,5 +89,26 @@
 
     .user-details {
         align-items: start;
+    }
+}
+
+@media(max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .user-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .user-info .profile-picture {
+        width: 250px;
+        height: 250px;
+    }
+
+    .user-details {
+        align-items: center;
     }
 }
