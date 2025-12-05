@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добавление подарка</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color-scheme.css">
     <link rel="stylesheet" href="css/gift-form.css">
 </head>
 <body>
@@ -36,57 +37,56 @@
         <section class="gift-create">
             <div class="wrapper">
                 <h1 class="large-headline">Добавление подарка</h1>
-                <div class="box">
-                    <form id="gift-create-form" enctype="multipart/form-data" class="form-layout">
-                        <div class="form-column-image">
-                            <div class="image-upload-container">
-                                <label for="gift-image-input" id="gift-image-label">
-                                    <img src="images/add-photo-icon.svg" alt="Добавить фото">
-                                </label>
-                                <input type="file" id="gift-image-input" name="gift-image" accept="image/*">
+                <form id="gift-create-form" enctype="multipart/form-data" class="box">
+                    <div class="form-column-image">
+                        <div class="image-upload-container">
+                            <label for="gift-image-input" id="gift-image-label">
+                                <img src="images/add-photo-icon.svg" alt="Добавить фото">
+                            </label>
+                            <input type="file" id="gift-image-input" name="gift-image" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="form-column-content">
+                        <div class="form-fields">
+                            <div class="form-field">
+                                <label for="title">Название <span class="text-accent">*</span></label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="gift-link">Ссылка на товар</label>
+                                <input type="text" id="gift-link" name="gift-link">
+                            </div>
+                            <div class="price-container">
+                                <div class="form-field">
+                                    <label for="price">Цена</label>
+                                    <input type="text" id="price" name="price">
+                                </div>
+                                <select class="currency-select">
+                                    <option>₽</option>
+                                    <option>$</option>
+                                    <option>€</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="gift-comment">Комментарий к подарку</label>
+                                <textarea name="gift-comment" id="gift-comment"></textarea>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="priority-choice">
+                                <label for="priority-choice">Приоритетный товар</label>
                             </div>
                         </div>
-                        <div class="form-column-content">
-                            <div class="form-fields">
-                                <div class="form-field">
-                                    <label for="title">Название <span class="text-accent">*</span></label>
-                                    <input type="text" id="title" name="title" required>
-                                </div>
-                                <div class="form-field">
-                                    <label for="gift-link">Ссылка на товар</label>
-                                    <input type="text" id="gift-link" name="gift-link">
-                                </div>
-                                <div class="price-container">
-                                    <div class="form-field">
-                                        <label for="price">Цена</label>
-                                        <input type="text" id="price" name="price">
-                                    </div>
-                                    <select class="currency-select">
-                                        <option>₽</option>
-                                        <option>$</option>
-                                        <option>€</option>
-                                    </select>
-                                </div>
-                                <div class="form-field">
-                                    <label for="gift-comment">Комментарий к подарку</label>
-                                    <textarea name="gift-comment" id="gift-comment"></textarea>
-                                </div>
-                                <div class="checkbox-container">
-                                    <input type="checkbox" id="priority-choice">
-                                    <label for="priority-choice">Приоритетный товар</label>
-                                </div>
-                            </div>
-                            <button type="submit" class="button button-accent">Сохранить</button>
-                        </div>
-                    </form>
-                </div>
+                        <button type="submit" class="button button-accent">Сохранить</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
     <footer>
         <div class="wrapper">
             <div class="footer-logo">
-                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
+                <a href="/"><img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
             </div>
             <p>&copy; WishCraft 2025</p>
         </div>

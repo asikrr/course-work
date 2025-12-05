@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Забронированные вами подарки</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color-scheme.css">
     <link rel="stylesheet" href="css/gifts.css">
 </head>
 <body>
@@ -70,11 +71,11 @@
                     <div class="gifts-container">
                         <article class="gift box">
                             <div class="gift-image-container">
-                                <img src="images/watch-image.png">
+                                <img src="images/watch-image.png" class="gift-image">
                                 <div class="wishlist-owner-info box">
-                                    <img src="images/default-avatar.svg" class="gift-image">
+                                    <img src="images/default-avatar.svg">
+                                    <a href="#" class="overlay-link"></a>
                                     <div>
-                                        <a href="#" class="overlay-link"></a>
                                         <h5>Олег</h5>
                                         <p class="text-accent">День рождения</p>
                                     </div>
@@ -136,7 +137,8 @@
     <footer>
         <div class="wrapper">
             <div class="footer-logo">
-                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
+                <a href="/"><img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
             </div>
             <p>&copy; WishCraft 2025</p>
         </div>

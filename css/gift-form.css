@@ -38,10 +38,6 @@
     display: none;
 }
 
-#gift-comment {
-    max-width: 420px;
-}
-
 .form-column-content {
     display: flex;
     flex-direction: column;
@@ -67,5 +63,33 @@
     #gift-create-form,
     #gift-update-form {
         flex-direction: column;
+    }
+
+    .price-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .price-container .form-field {
+        flex: 1;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+@media(max-width: 360px) {
+    h1 {
+        text-align: center;
+    }
+
+    .button {
+        align-self: center;
+    }
+
+    .image-upload-container {
+        display: flex;
+        justify-content: center;
     }
 }

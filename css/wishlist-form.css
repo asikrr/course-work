@@ -82,3 +82,17 @@
         flex-direction: column;
     }
 }
+
+@media(max-width: 360px) {
+    .price-container {
+        gap: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .button {
+        align-self: center;
+    }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вишлист</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color-scheme.css">
     <link rel="stylesheet" href="css/gifts.css">
 </head>
 <body>
@@ -137,7 +138,10 @@
                                 <div class="gift-content">
                                     <div class="gift-header">
                                         <div class="gift-header-info">
-                                            <p class="text-highlight">Забронирован</p>
+                                            <div class="gift-reservation-mark">
+                                                <img src="images/lock-icon.svg">
+                                                <p class="text-highlight">Алиса</p>
+                                            </div>
                                             <h2 class="small-headline">Кружка</h2>
                                             <p class="gift-price text-accent">500р</p>
                                         </div>
@@ -219,7 +223,8 @@
     <footer>
         <div class="wrapper">
             <div class="footer-logo">
-                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft"></a>
+                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
+                <a href="/"><img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
             </div>
             <p>&copy; WishCraft 2025</p>
         </div>
