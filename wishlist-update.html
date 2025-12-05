@@ -12,14 +12,19 @@
     <header>
         <div class="wrapper">
             <div class="header-logo">
-                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
+                <a href="/"><img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
             </div>
             <div class="header-controls">
                 <button class="button-icon" type="button">
-                    <img src="images/dark-theme-icon.svg" alt="Смена темы">
+                    <img src="images/dark-theme-icon.svg" alt="Смена темы" class="light-theme-icon">
+                    <img src="images/light-theme-icon.svg" alt="Смена темы" class="dark-theme-icon">
                 </button>
                 <nav class="menu">
-                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
+                    <button type="button">
+                        <img src="images/default-avatar.svg" alt="Изображение профиля" class="light-theme-icon">
+                        <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
+                    </button>
                     <div class="dropdown">
                         <a href="profile.html" class="dropdown-item">Профиль</a>
                         <a href="my-wishlists.html" class="dropdown-item">Мои вишлисты</a>
@@ -37,7 +42,7 @@
         <section class="wishlist-update">
             <div class="wrapper">
                 <h1 class="large-headline">Редактирование вишлиста</h1>
-                <div class="wishlist-form-container">
+                <div class="wishlist-form-container box">
                     <form id="wishlist-update-form">
                         <div class="wishlist-form-info">
                             <h2 class="small-headline">Информация о вишлисте</h2>

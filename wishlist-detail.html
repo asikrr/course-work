@@ -12,14 +12,19 @@
     <header>
         <div class="wrapper">
             <div class="header-logo">
-                <a href="/"><img src="images/header-logo.svg" alt="WishCraft"></a>
+                <a href="/"><img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
+                <a href="/"><img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
             </div>
             <div class="header-controls">
                 <button class="button-icon" type="button">
-                    <img src="images/dark-theme-icon.svg" alt="Смена темы">
+                    <img src="images/dark-theme-icon.svg" alt="Смена темы" class="light-theme-icon">
+                    <img src="images/light-theme-icon.svg" alt="Смена темы" class="dark-theme-icon">
                 </button>
                 <nav class="menu">
-                    <button type="button"><img src="images/default-avatar.svg" alt="Изображение профиля"></button>
+                    <button type="button">
+                        <img src="images/default-avatar.svg" alt="Изображение профиля" class="light-theme-icon">
+                        <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
+                    </button>
                     <div class="dropdown">
                         <a href="profile.html" class="dropdown-item">Профиль</a>
                         <a href="my-wishlists.html" class="dropdown-item">Мои вишлисты</a>
@@ -44,16 +49,20 @@
                         <h1 class="large-headline">Новый год</h1>
                         <div class="wishlist-actions">
                             <button type="button" class="button-icon">
-                                <img src="images/share-link-icon.svg" alt="Поделиться">
+                                <img src="images/share-link-icon.svg" alt="Поделиться" class="light-theme-icon">
+                                <img src="images/share-link-icon-dark-theme.svg" alt="Поделиться" class="dark-theme-icon">
                             </button>
                             <a href="wishlist-update.html" class="button-icon">
-                                <img src="images/pencil-icon.svg" alt="Редактировать">
+                                <img src="images/pencil-icon.svg" alt="Редактировать" class="light-theme-icon">
+                                <img src="images/pencil-icon-dark-theme.svg" alt="Редактировать" class="dark-theme-icon">
                             </a>
                             <button type="button" class="button-icon">
-                                <img src="images/pin-icon.svg" alt="Закрепить">
+                                <img src="images/pin-icon.svg" alt="Закрепить" class="light-theme-icon">
+                                <img src="images/pin-icon-dark-theme.svg" alt="Закрепить" class="dark-theme-icon">
                             </button>
                             <button type="button" class="button-icon">
-                                <img src="images/trash-can-icon.svg" alt="Удалить">
+                                <img src="images/trash-can-icon.svg" alt="Удалить" class="light-theme-icon">
+                                <img src="images/trash-can-icon-dark-theme.svg" alt="Удалить" class="dark-theme-icon">
                             </button>
                         </div>
                     </div>
@@ -68,7 +77,8 @@
                         <div class="wishlist-summary-actions">
                             <img src="images/filter-icon.svg" class="button-icon wishlist-controls-icon">
                             <div class="reserved-gifts-counter">
-                                <img src="images/lock-icon.svg">
+                                <img src="images/lock-icon.svg" class="light-theme-icon">
+                                <img src="images/lock-icon-dark-theme.svg" class="dark-theme-icon">
                                 <p>1/4</p>
                             </div>
                             <a href="gift-create.html" class="button button-accent">Добавить товар</a>
@@ -107,6 +117,8 @@
                             </div>
                         </div>
                     </div>
+                    <img src="images/filter-icon.svg" class="button-icon wishlist-controls-icon light-theme-icon">
+                    <img src="images/filter-icon-dark-theme.svg" class="button-icon wishlist-controls-icon dark-theme-icon"> 
                     <div class="gifts-container">
                         <article class="gift priority box">
                             <div class="gift-image-container">
@@ -119,9 +131,11 @@
                                         <p class="gift-price text-accent">5000р</p>
                                     </div>
                                     <div class="gift-header-actions">
-                                        <img src="images/fire-icon.svg">
+                                        <img src="images/fire-icon.svg" alt="Приоритетный товар" class="light-theme-icon">
+                                        <img src="images/fire-icon-dark-theme.svg" alt="Приоритетный товар" class="dark-theme-icon">
                                         <button type="button" class="button-icon">
-                                            <img src="images/action-menu-icon.svg">
+                                            <img src="images/action-menu-icon.svg" alt="Меню" class="light-theme-icon">
+                                            <img src="images/action-menu-icon-dark-theme.svg" alt="Меню" class="dark-theme-icon">
                                         </button>
                                     </div>
                                 </div>
@@ -138,23 +152,22 @@
                                 <div class="gift-content">
                                     <div class="gift-header">
                                         <div class="gift-header-info">
-                                            <div class="gift-reservation-mark">
-                                                <img src="images/lock-icon.svg">
-                                                <p class="text-highlight">Алиса</p>
-                                            </div>
+                                            <p class="text-highlight">Алиса</p>
                                             <h2 class="small-headline">Кружка</h2>
                                             <p class="gift-price text-accent">500р</p>
                                         </div>
                                         <div class="gift-header-actions">
                                             <button type="button" class="button-icon">
-                                                <img src="images/action-menu-icon.svg">
+                                                <img src="images/action-menu-icon.svg" alt="Меню" class="light-theme-icon">
+                                                <img src="images/action-menu-icon-dark-theme.svg" alt="Меню" class="dark-theme-icon">
                                             </button>
                                         </div>
                                     </div>
                                     <div class="gift-comment">
                                         <p>Комментарий</p>
                                         <button type="button" class="button-icon">
-                                            <img src="images/arrow-icon.svg">
+                                            <img src="images/arrow-icon.svg" class="light-theme-icon">
+                                            <img src="images/arrow-icon-dark-theme.svg" class="dark-theme-icon">
                                         </button>
                                     </div>
                                 </div>
@@ -176,14 +189,16 @@
                                         </div>
                                         <div class="gift-header-actions">
                                             <button type="button" class="button-icon">
-                                                <img src="images/action-menu-icon.svg">
+                                                <img src="images/action-menu-icon.svg" alt="Меню" class="light-theme-icon">
+                                                <img src="images/action-menu-icon-dark-theme.svg" alt="Меню" class="dark-theme-icon">
                                             </button>
                                         </div>
                                     </div>
                                     <div class="gift-comment">
                                         <p>Комментарий</p>
                                         <button type="button" class="button-icon">
-                                            <img src="images/arrow-icon.svg">
+                                            <img src="images/arrow-icon.svg" class="light-theme-icon">
+                                            <img src="images/arrow-icon-dark-theme.svg" class="dark-theme-icon">
                                         </button>
                                     </div>
                                 </div>
@@ -205,7 +220,8 @@
                                         </div>
                                         <div class="gift-header-actions">
                                             <button type="button" class="button-icon">
-                                                <img src="images/action-menu-icon.svg">
+                                                <img src="images/action-menu-icon.svg" alt="Меню" class="light-theme-icon">
+                                                <img src="images/action-menu-icon-dark-theme.svg" alt="Меню" class="dark-theme-icon">
                                             </button>
                                         </div>
                                     </div>

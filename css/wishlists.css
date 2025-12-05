@@ -71,7 +71,7 @@ section .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #C5C1D2;
+    background-color: var(--outline-and-border-color);
     border-radius: 20px;
     width: 100%;
     height: 102px;

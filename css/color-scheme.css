@@ -126,7 +126,7 @@ select {
 .tab.active {
     background-color: var(--brand-primary-color);
     border: 1px solid var(--brand-primary-color);
-    color: var(--text-main-color);
+    color: var(--text-inverted-main-color);
 }
 
 .tab:not(.active):hover {
@@ -148,7 +148,7 @@ input:checked + .slider {
 
 .pagination-link,
 .pagination-current {
-    color: var(--text-color-for-light-bg);
+    color: var(--text-main-color);
     border: 1px solid var(--outline-and-border-color);
 }
 
@@ -244,12 +244,20 @@ footer p {
     .text-highlight {
         color: var(--text-inverted-main-color);
     }
-    
-    footer p {
-        color: var(--text-main-color);
-    }
 
     .authentication-image-container img {
         filter: brightness(70%);
+    }
+
+    .tab:not(.active) {
+        color: var(--text-main-color);
+    }
+
+    .tab:not(.active):hover {
+        color: var(--text-inverted-main-color-main-color);
+    }
+
+    footer p {
+        color: var(--text-main-color);
     }
 }
