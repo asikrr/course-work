@@ -10,7 +10,7 @@
 .error-title {
     font-size: 10rem;
     line-height: 130px;
-    color: #554388;
+    color: var(--brand-primary-color);
 }
 
 .error-text {

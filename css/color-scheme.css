@@ -257,6 +257,10 @@ footer p {
         color: var(--text-inverted-main-color-main-color);
     }
 
+    .pagination-link:hover {
+        color: var(--text-inverted-main-color);
+    }
+
     footer p {
         color: var(--text-main-color);
     }

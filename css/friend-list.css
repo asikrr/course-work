@@ -43,21 +43,14 @@
     gap: 20px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 360px) {
     .friend-list-header-controls {
         flex-direction: column;
         align-items: stretch;
         gap: 15px;
     }
-    
-    .friend-list-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-        height: auto;
-    }
 
-    .friend-info {
-        flex-direction: column;
+    .friend-list-header-controls > button {
+        align-self: center;
     }
 }

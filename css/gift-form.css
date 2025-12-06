@@ -77,17 +77,13 @@
     input[type="text"] {
         width: 100%;
     }
-}
-
-@media(max-width: 360px) {
-    h1 {
-        text-align: center;
-    }
 
     .button {
         align-self: center;
     }
+}
 
+@media(max-width: 360px) {
     .image-upload-container {
         display: flex;
         justify-content: center;

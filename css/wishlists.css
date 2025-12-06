@@ -116,14 +116,6 @@ section .wrapper {
     }
 }
 
-@media(max-width: 768px) {
-    .wishlists-controls {
-        align-items: start;
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
 @media(max-width: 360px) {
     .wishlists .wrapper h1 {
         align-self: center;
@@ -140,6 +132,8 @@ section .wrapper {
 
     .wishlists-controls {
         align-items: center;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .wishlists-content h2 {
@@ -147,6 +141,10 @@ section .wrapper {
     }
 
     .wishlists-sort {
+        align-self: center;
+    }
+
+    .pagination {
         align-self: center;
     }
 }
