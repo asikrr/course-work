@@ -12,8 +12,7 @@
     gap: 20px;
 }
 
-#gift-create-form #gift-image-label,
-#gift-update-form #gift-image-label {
+.gift-image-label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,11 +24,11 @@
     cursor: pointer;
 }
 
-#gift-create-form #gift-image-label {
-    background-color: var(--outline-and-border-color);
+#gift-create-form .gift-image-label {
+    background-color: var(--default-color);
 }
 
-#gift-update-form #gift-image-label {
+#gift-update-form .gift-image-label {
     background-image: url("../images/mug-image.png");
 }
 

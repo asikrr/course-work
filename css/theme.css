@@ -1,0 +1,79 @@
+:root {
+    --page-bg-color: #F6F6F6;
+    --element-bg-color: #FFF;
+    --footer-bg-color: #544388;
+    --default-color: #C5C1D2;
+    --text-main-color: #000;
+    --text-inverted-main-color: #FFF;
+    --danger-color: #C34D4D;
+    --brand-primary-color: #544388;
+    --brand-primary-color-pair: #B4A6DE;
+    --accent-color: #FFCF68;
+    --secondary-text-color: #888888; 
+    --dropdown-menu-hover-color: #EEE;
+}
+
+.dark-theme-icon {
+    display: none;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --page-bg-color: #2E2C32;
+        --element-bg-color: #413E48;
+        --footer-bg-color: #242227;
+        --default-color: #898598;
+        --text-main-color: #FFF;
+        --text-inverted-main-color: #000;
+        --danger-color: #DB6868;
+        --brand-primary-color: #B7A9E0;
+        --brand-primary-color-pair: #CDC4EA;
+        --accent-color: #DAB565;
+        --secondary-text-color: #DADADA; 
+        --dropdown-menu-hover-color: #242227;
+    }
+
+    .dark-theme-icon {
+        display: block;
+    }
+
+    .light-theme-icon {
+        display: none;
+    }
+
+    .button-accent {
+        color: var(--text-inverted-main-color);
+    }
+
+    .button-regular {
+        color: var(--text-inverted-main-color);
+    }
+
+    .text-highlight {
+        color: var(--text-inverted-main-color);
+    }
+
+    .authentication-image-container img {
+        filter: brightness(70%);
+    }
+
+    .tab:not(.active) {
+        color: var(--text-main-color);
+    }
+
+    .tab:not(.active):hover {
+        color: var(--text-inverted-main-color);
+    }
+
+    .pagination-link:hover {
+        color: var(--text-inverted-main-color);
+    }
+
+    footer p {
+        color: var(--text-main-color);
+    }
+
+    .main-screen {
+        background: url('../images/background-image-dark-theme.png') center / cover no-repeat;
+    }
+}

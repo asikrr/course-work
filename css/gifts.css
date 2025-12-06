@@ -201,7 +201,7 @@
     justify-content: center;
     align-items: center;
     width: 199px;
-    background-color: var(--outline-and-border-color);
+    background-color: var(--default-color);
     border-radius: 20px;
     position: relative;
 }
