@@ -1,8 +1,5 @@
 .main-screen {
-    background-image: url('../images/background-image.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url('../images/background-image.png') center / cover no-repeat;
 }
 
 .main-screen .wrapper {

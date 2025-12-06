@@ -260,4 +260,8 @@ footer p {
     footer p {
         color: var(--text-main-color);
     }
+
+    .main-screen {
+        background: url('../images/background-image-dark-theme.png') center / cover no-repeat;
+    }
 }
