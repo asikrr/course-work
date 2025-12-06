@@ -237,10 +237,6 @@ footer p {
         color: var(--text-inverted-main-color);
     }
 
-    .button-danger {
-        color: var(--text-main-color);
-    }
-
     .text-highlight {
         color: var(--text-inverted-main-color);
     }

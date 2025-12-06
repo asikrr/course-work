@@ -111,4 +111,8 @@
     .user-details {
         align-items: center;
     }
+
+    .account-statistic {
+        grid-template-columns: none;
+    }
 }

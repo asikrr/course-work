@@ -26,7 +26,7 @@
 }
 
 #gift-create-form #gift-image-label {
-    background-color: #C5C1D2;
+    background-color: var(--outline-and-border-color);
 }
 
 #gift-update-form #gift-image-label {

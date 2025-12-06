@@ -376,4 +376,8 @@ footer .wrapper{
     .tab {
         width: 100%;
     }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+        width: 300px;
+    }
 }
