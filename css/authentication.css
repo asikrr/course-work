@@ -1,9 +1,8 @@
-.register, .login {
+.authentication {
     min-height: 100vh;
 }
 
-.register .box, 
-.login .box {
+.authentication .box {
     display: flex;
     align-items: center;
     padding: 0;
