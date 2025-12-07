@@ -12,8 +12,10 @@
     <header>
         <div class="wrapper">
             <div class="header-logo">
-                <a href="/"><img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
             <div class="header-controls">
                 <button class="button-icon" type="button">
@@ -22,8 +24,8 @@
                 </button>
                 <nav class="menu">
                     <button type="button">
-                        <img src="images/default-avatar.svg" alt="Изображение профиля" class="light-theme-icon">
-                        <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
+                        <img src="images/default-avatar.svg" alt="Меню профиля" class="light-theme-icon">
+                        <img src="images/default-avatar-dark-theme.svg" alt="Меню профиля" class="dark-theme-icon">
                     </button>
                     <div class="dropdown">
                         <a href="profile.html" class="dropdown-item">Профиль</a>
@@ -46,11 +48,11 @@
                     <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
                     <div class="wishlists-owner-info">
                         <h1 class="large-headline">Олег</h1>
-                        <button class="button button-accent">Добавить в друзья</button>
+                        <button class="button button-accent" type="button">Добавить в друзья</button>
                     </div>
                 </div>
                 <div class="wishlists-content">
-                    <h2 class="small-headline">Вишлисты пользователя</h2>
+                    <h2 class="medium-headline">Вишлисты пользователя</h2>
                     <div class="wishlists-sort">
                         <label for="sort-select">Сортировать</label>
                         <select id="sort-select" name="sort">
@@ -59,17 +61,17 @@
                         </select>
                     </div>
                     <div class="wishlists-container">
-                        <article class="box wishlist">
+                        <article class="wishlist box">
                             <div class="wishlist-info">
                                 <div class="wishlist-header">
                                     <div>
-                                        <h2 class="small-headline">День рождения</h2>
+                                        <h3 class="small-headline">День рождения</h3>
                                         <p class="text-accent">10.10.2026</p>
                                     </div>
                                 </div>
                                 <div class="reserved-gifts-counter">
-                                    <img src="images/lock-icon.svg" class="light-theme-icon">
-                                    <img src="images/lock-icon-dark-theme.svg" class="dark-theme-icon">
+                                    <img src="images/lock-icon.svg" class="light-theme-icon" alt="Забронировано подарков">
+                                    <img src="images/lock-icon-dark-theme.svg" class="dark-theme-icon" alt="Забронировано подарков">
                                     <p>2/6</p>
                                 </div>
                             </div>
@@ -107,10 +109,12 @@
     <footer>
         <div class="wrapper">
             <div class="footer-logo">
-                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
-            <p>&copy; WishCraft 2025</p>
+            <small class="copyright">&copy; WishCraft 2025</small>
         </div>
     </footer>
 </body>

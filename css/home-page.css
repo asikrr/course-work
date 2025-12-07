@@ -43,16 +43,17 @@
 .site-info-content {
     display: flex;
     justify-content: space-between;
+}
+
+.site-info-item {
+    display: flex;
     align-items: center;
-    flex-shrink: 0;
     gap: 20px;
 }
 
 .step-guide {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     width: 324px;
     gap: 20px;
 }
@@ -60,7 +61,7 @@
 .step-guide-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap: 20px;
 }
 
@@ -71,13 +72,14 @@
 @media(max-width: 1200px) {
     .site-info-content {
         flex-direction: column;
+        gap: 20px;
     }
 
-    .site-info-content {
+    .site-info-item {
         flex-direction: column;
     }
 
-    .site-info-content > img {
+    .step-arrow {
         rotate: 90deg;
     }
 }

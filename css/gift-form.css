@@ -6,8 +6,7 @@
     min-height: 100vh;
 }
 
-#gift-create-form,
-#gift-update-form {
+.gift-form {
     display: flex;
     gap: 20px;
 }
@@ -32,24 +31,23 @@
     background-image: url("../images/mug-image.png");
 }
 
-#gift-create-form input[type="file"],
-#gift-update-form input[type="file"] {
+.gift-form input[type="file"] {
     display: none;
 }
 
-.form-column-content {
+.form-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.form-column-content label {
+.form-content label {
     padding-left: 10px;
 }
 
 .price-container {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 20px;
 }
 
@@ -59,8 +57,7 @@
 }
 
 @media(max-width: 768px) {
-    #gift-create-form,
-    #gift-update-form {
+    .gift-form {
         flex-direction: column;
     }
 
@@ -83,7 +80,7 @@
 }
 
 @media(max-width: 360px) {
-    .image-upload-container {
+    .form-image-upload {
         display: flex;
         justify-content: center;
     }

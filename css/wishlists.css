@@ -8,7 +8,7 @@ section .wrapper {
 .wishlists-controls {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .wishlists-content {
@@ -50,7 +50,7 @@ section .wrapper {
 .reserved-gifts-counter {
     display: flex;
     gap: 5px;
-    align-items: end;
+    align-items: flex-end;
     align-self: flex-end;
 }
 

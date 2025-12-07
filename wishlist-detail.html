@@ -12,8 +12,10 @@
     <header>
         <div class="wrapper">
             <div class="header-logo">
-                <a href="/"><img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
             <div class="header-controls">
                 <button class="button-icon" type="button">
@@ -22,8 +24,8 @@
                 </button>
                 <nav class="menu">
                     <button type="button">
-                        <img src="images/default-avatar.svg" alt="Изображение профиля" class="light-theme-icon">
-                        <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
+                        <img src="images/default-avatar.svg" alt="Меню профиля" class="light-theme-icon">
+                        <img src="images/default-avatar-dark-theme.svg" alt="Меню профиля" class="dark-theme-icon">
                     </button>
                     <div class="dropdown">
                         <a href="profile.html" class="dropdown-item">Профиль</a>
@@ -42,10 +44,8 @@
         <section class="wishlist-page">
             <div class="wrapper">
                 <div class="wishlist-page-header">
-                    <div class="back-to-wishlists">
-                        <a href="my-wishlists.html" class="text-accent">&larr; К вишлистам</a>
-                    </div>
-                    <div class="wishlist-page-header-row">
+                    <a href="my-wishlists.html" class="text-accent">&larr; К вишлистам</a>
+                    <div class="wishlist-title-bar">
                         <h1 class="large-headline">Новый год</h1>
                         <div class="wishlist-actions">
                             <button type="button" class="button-icon">
@@ -76,8 +76,8 @@
                         </p>
                         <div class="wishlist-summary-actions">
                             <div class="reserved-gifts-counter">
-                                <img src="images/lock-icon.svg" class="light-theme-icon">
-                                <img src="images/lock-icon-dark-theme.svg" class="dark-theme-icon">
+                                <img src="images/lock-icon.svg" class="light-theme-icon" alt="">
+                                <img src="images/lock-icon-dark-theme.svg" class="dark-theme-icon" alt="">
                                 <p>1/4</p>
                             </div>
                             <a href="gift-create.html" class="button button-accent">Добавить товар</a>
@@ -88,44 +88,40 @@
                     <div class="wishlist-controls box">
                         <div class="wishlist-sort">
                             <p>Сортировать</p>
-                            <select>
+                            <select id="gifts-sort-select" name="gifts-sort">
                                 <option value="cheap-first">сначала дешевле</option>
                                 <option value="expensive-first">сначала дороже</option>
                                 <option value="date-added">по дате добавления</option>
                             </select>
                         </div>
-                        <div class="wishlist-filter">
-                            <p>Показать</p>
+                        <fieldset class="wishlist-filter">
+                            <legend>Показать</legend>
                             <div class="wishlist-filter-choices">
                                 <div class="wishlist-filter-choice">
                                     <input type="radio" name="wishlist-filter-choice" value="all" id="choice-all" checked>
                                     <label for="choice-all">Все</label>
                                 </div>
                                 <div class="wishlist-filter-choice">
-                                    <input type="radio" name="wishlist-filter-choice" value="reserved-only" id="choice-reserved-only">
-                                    <label for="choice-reserved-only">Только забронированные</label>
+                                    <input type="radio" name="wishlist-filter-choice" value="bought-only" id="choice-bought-only">
+                                    <label for="choice-bought-only">Только приобретенные</label>
                                 </div>
                                 <div class="wishlist-filter-choice">
-                                    <input type="radio" name="wishlist-filter-choice" value="not-reserved-only" id="choice-not-reserved-only">
-                                    <label for="choice-not-reserved-only">Только незабронированные</label>
+                                    <input type="radio" name="wishlist-filter-choice" value="not-bought-only" id="choice-not-bought-only">
+                                    <label for="choice-not-bought-only">Только неприобретенные</label>
                                 </div>
-                                <div class="wishlist-filter-choice">
-                                    <input type="radio" name="wishlist-filter-choice" value="priority-only" id="priority-only">
-                                    <label for="choice-priority-only">Только приоритетные подарки</label>
-                                </div>           
                             </div>
-                        </div>
+                        </fieldset>
                     </div>
                     <div class="gifts-container">
-                        <article class="gift priority box">
+                        <article class="gift gift-priority box">
                             <div class="gift-image-container">
-                                <img src="images/headphones-image.png" class="gift-image">
+                                <img src="images/headphones-image.png" class="gift-image" alt="Фото подарка">
                             </div>
                             <div class="gift-body">
                                 <div class="gift-header">
                                     <div class="gift-header-info">
                                         <h2 class="small-headline">Наушники</h2>
-                                        <p class="gift-price text-accent">5000р</p>
+                                        <p class="text-accent">5000р</p>
                                     </div>
                                     <div class="gift-header-actions">
                                         <img src="images/fire-icon.svg" alt="Приоритетный товар" class="light-theme-icon">
@@ -141,9 +137,9 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="gift reserved box">
+                        <article class="gift gift-reserved box">
                             <div class="gift-image-container">
-                                <img src="images/mug-image.png" class="gift-image">
+                                <img src="images/mug-image.png" class="gift-image" alt="Фото подарка">
                             </div>
                             <div class="gift-body">
                                 <div class="gift-content">
@@ -151,7 +147,7 @@
                                         <div class="gift-header-info">
                                             <p class="text-highlight">Алиса</p>
                                             <h2 class="small-headline">Кружка</h2>
-                                            <p class="gift-price text-accent">500р</p>
+                                            <p class="text-accent">500р</p>
                                         </div>
                                         <div class="gift-header-actions">
                                             <button type="button" class="button-icon">
@@ -163,8 +159,8 @@
                                     <div class="gift-comment">
                                         <p class="text-secondary">Комментарий</p>
                                         <button type="button" class="button-icon">
-                                            <img src="images/arrow-icon.svg" class="light-theme-icon">
-                                            <img src="images/arrow-icon-dark-theme.svg" class="dark-theme-icon">
+                                            <img src="images/arrow-icon.svg" class="light-theme-icon" alt="Показать комментарий">
+                                            <img src="images/arrow-icon-dark-theme.svg" class="dark-theme-icon" alt="Показать комментарий">
                                         </button>
                                     </div>
                                 </div>
@@ -175,14 +171,14 @@
                         </article>
                         <article class="gift box">
                             <div class="gift-image-container">
-                                <img src="images/hoodie-image.png" class="gift-image">
+                                <img src="images/hoodie-image.png" class="gift-image" alt="Фото подарка">
                             </div>
                             <div class="gift-body">
                                 <div class="gift-content">
                                     <div class="gift-header">
                                         <div class="gift-header-info">
                                             <h2 class="small-headline">Худи</h2>
-                                            <p class="gift-price text-accent">1900р</p>
+                                            <p class="text-accent">1900р</p>
                                         </div>
                                         <div class="gift-header-actions">
                                             <button type="button" class="button-icon">
@@ -194,8 +190,8 @@
                                     <div class="gift-comment">
                                         <p class="text-secondary">Комментарий</p>
                                         <button type="button" class="button-icon">
-                                            <img src="images/arrow-icon.svg" class="light-theme-icon">
-                                            <img src="images/arrow-icon-dark-theme.svg" class="dark-theme-icon">
+                                            <img src="images/arrow-icon.svg" class="light-theme-icon" alt="Показать комментарий">
+                                            <img src="images/arrow-icon-dark-theme.svg" class="dark-theme-icon" alt="Показать комментарий">
                                         </button>
                                     </div>
                                 </div>
@@ -206,14 +202,14 @@
                         </article>
                         <article class="gift box">
                             <div class="gift-image-container">
-                                <img src="images/bag-image.png" class="gift-image">
+                                <img src="images/bag-image.png" class="gift-image" alt="Фото подарка"> 
                             </div>
                             <div class="gift-body">
                                 <div class="gift-content">
                                     <div class="gift-header">
                                         <div class="gift-header-info">
                                             <h2 class="small-headline">Сумка</h2>
-                                            <p class="gift-price text-accent">800р</p>
+                                            <p class="text-accent">800р</p>
                                         </div>
                                         <div class="gift-header-actions">
                                             <button type="button" class="button-icon">
@@ -236,10 +232,12 @@
     <footer>
         <div class="wrapper">
             <div class="footer-logo">
-                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
-            <p>&copy; WishCraft 2025</p>
+            <small class="copyright">&copy; WishCraft 2025</small>
         </div>
     </footer>
 </body>

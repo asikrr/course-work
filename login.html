@@ -12,8 +12,10 @@
     <header>
         <div class="wrapper">
             <div class="header-logo">
-                <a href="/"><img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
             <div class="header-controls">
                 <button class="button-icon" type="button">
@@ -23,8 +25,12 @@
                 <nav class="menu">
                     <a href="login.html" class="button button-regular-border">Войти</a>
                     <a href="register.html" class="button button-accent">Зарегистрироваться</a>
-                    <button><img src="images/burger-menu-icon.svg" class="burger-menu light-theme-icon"></button>
-                    <button><img src="images/burger-menu-icon-dark-theme.svg" class="burger-menu dark-theme-icon"></button>
+                    <div class="burger-menu">
+                        <button class="burger-button" type="button">
+                            <img src="images/burger-menu-icon.svg" alt="Меню" class="light-theme-icon">
+                            <img src="images/burger-menu-icon-dark-theme.svg" alt="Меню" class="dark-theme-icon">
+                        </button>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -36,15 +42,15 @@
                     <div class="authentication-container">
                         <h1 class="large-headline">Вход</h1>
                         <div class="authentication-form-container">
-                            <form id="login-form">
+                            <form id="login-form" method="post">
                                 <div class="form-fields">
                                     <div class="form-field">
                                         <label for="email">Email</label>
-                                        <input type="email" id="email" name="email">
+                                        <input type="email" id="email" name="email" required>
                                     </div>
                                     <div class="form-field">
                                         <label for="password">Пароль</label>
-                                        <input type="password" id="password" name="password">
+                                        <input type="password" id="password" name="password" required>
                                     </div>
                                 </div>
                                 <a href="#">Забыли пароль?</a>
@@ -54,7 +60,7 @@
                         </div>
                     </div>
                     <div class="authentication-image-container">
-                        <img src="images/authentication-image.png">
+                        <img src="images/authentication-image.png" alt="Изображение страницы входа">
                     </div>
                 </div>
             </div>
@@ -63,10 +69,12 @@
     <footer>
         <div class="wrapper">
             <div class="footer-logo">
-                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
-            <p>&copy; WishCraft 2025</p>
+            <small class="copyright">&copy; WishCraft 2025</small>
         </div>
     </footer>
 </body>

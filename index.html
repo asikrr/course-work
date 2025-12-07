@@ -12,8 +12,10 @@
     <header>
         <div class="wrapper">
             <div class="header-logo">
-                <a href="/"><img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
             <div class="header-controls">
                 <button class="button-icon" type="button">
@@ -24,8 +26,10 @@
                     <a href="login.html" class="button button-regular-border">Войти</a>
                     <a href="register.html" class="button button-accent">Зарегистрироваться</a>
                     <div class="burger-menu">
-                        <button><img src="images/burger-menu-icon.svg" alt="Меню" class="light-theme-icon"></button>
-                        <button><img src="images/burger-menu-icon-dark-theme.svg" alt="Меню" class="dark-theme-icon"></button>
+                        <button class="burger-button" type="button">
+                            <img src="images/burger-menu-icon.svg" alt="Меню" class="light-theme-icon">
+                            <img src="images/burger-menu-icon-dark-theme.svg" alt="Меню" class="dark-theme-icon">
+                        </button>
                     </div>
                 </nav>
             </div>
@@ -47,46 +51,54 @@
                     <p><span class="text-accent">WishCraft</span> — удобный сервис для создания списков желаний. 
                         Всего несколько простых шагов и вы всегда будете получать только нужные подарки</p>
                 </div>
-                <div class="site-info-content">
-                    <div class="step-guide box">
-                        <img src="images/default-avatar.svg" alt="Аватар" class="light-theme-icon">
-                        <img src="images/default-avatar-dark-theme.svg" alt="Аватар" class="dark-theme-icon">
-                        <div class="step-guide-text">
-                            <h3 class="small-headline">Зарегистрируйтесь на сайте</h3>
-                            <p>Регистрация простая и не займет много времени</p>
+                <ol class="site-info-content">
+                    <li class="site-info-item">
+                        <div class="step-guide box">
+                            <img src="images/default-avatar.svg" alt="Аватар" class="light-theme-icon">
+                            <img src="images/default-avatar-dark-theme.svg" alt="Аватар" class="dark-theme-icon">
+                            <div class="step-guide-text">
+                                <h3 class="small-headline">Зарегистрируйтесь на сайте</h3>
+                                <p>Регистрация простая и не займет много времени</p>
+                            </div>
                         </div>
-                    </div>
-                    <img src="images/horizontal-arrow-icon.svg" class="light-theme-icon">
-                    <img src="images/horizontal-arrow-icon-dark-theme.svg" class="dark-theme-icon">
-                    <div class="step-guide box">
-                        <img src="images/wishlist-icon.svg" alt="Список желаний" class="light-theme-icon">
-                        <img src="images/wishlist-icon-dark-theme.svg" alt="Список желаний" class="dark-theme-icon">
-                        <div class="step-guide-text">
-                            <h3 class="small-headline">Создайте список желаний</h3>
-                            <p>Добавляйте в список подарки, которые хотите получить</p>
+                        <img src="images/horizontal-arrow-icon.svg" class="light-theme-icon step-arrow" alt="">
+                        <img src="images/horizontal-arrow-icon-dark-theme.svg" class="dark-theme-icon step-arrow" alt="">
+                    </li>
+                    <li class="site-info-item">
+                        <div class="step-guide box">
+                            <img src="images/wishlist-icon.svg" alt="Список желаний" class="light-theme-icon">
+                            <img src="images/wishlist-icon-dark-theme.svg" alt="Список желаний" class="dark-theme-icon">
+                            <div class="step-guide-text">
+                                <h3 class="small-headline">Создайте список желаний</h3>
+                                <p>Добавляйте в список подарки, которые хотите получить</p>
+                            </div>
                         </div>
-                    </div>
-                    <img src="images/horizontal-arrow-icon.svg" class="light-theme-icon">
-                    <img src="images/horizontal-arrow-icon-dark-theme.svg" class="dark-theme-icon">
-                    <div class="step-guide box">
-                        <img src="images/click-on-link-icon.svg" alt="Курсор на ссылке" class="light-theme-icon">
-                        <img src="images/click-on-link-icon-dark-theme.svg" alt="Курсор на ссылке" class="dark-theme-icon">
-                        <div class="step-guide-text">
-                            <h3 class="small-headline">Поделитесь ссылкой</h3>
-                            <p>Готово! Теперь вы будете получать только желаемые подарки</p>
+                        <img src="images/horizontal-arrow-icon.svg" class="light-theme-icon step-arrow" alt="">
+                        <img src="images/horizontal-arrow-icon-dark-theme.svg" class="dark-theme-icon step-arrow" alt="">
+                    </li>
+                    <li class="site-info-item">
+                        <div class="step-guide box">
+                            <img src="images/click-on-link-icon.svg" alt="Курсор на ссылке" class="light-theme-icon">
+                            <img src="images/click-on-link-icon-dark-theme.svg" alt="Курсор на ссылке" class="dark-theme-icon">
+                            <div class="step-guide-text">
+                                <h3 class="small-headline">Поделитесь ссылкой</h3>
+                                <p>Готово! Теперь вы будете получать только желаемые подарки</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ol>
             </div>
         </section>
     </main>
     <footer>
         <div class="wrapper">
             <div class="footer-logo">
-                <a href="/"><img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon"></a>
-                <a href="/"><img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon"></a>
+                <a href="/">
+                    <img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
             </div>
-            <p>&copy; WishCraft 2025</p>
+            <small class="copyright">&copy; WishCraft 2025</small>
         </div>
     </footer>
 </body>

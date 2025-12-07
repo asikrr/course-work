@@ -36,11 +36,11 @@
     gap: 5px;
 }
 
-.wishlist-page-header-row {
+.wishlist-title-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .wishlist-page-header .wishlist-owner-info {
@@ -83,7 +83,7 @@
 
 .wishlist-summary-actions {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     align-self: flex-end;
     gap: 20px;
 }
@@ -95,7 +95,7 @@
 }
 
 .wishlist-gifts, 
-.reserved-gifts {
+.reserved-gifts-content {
     display: flex;
     gap: 20px;
 }
@@ -123,8 +123,12 @@
     gap: 10px;
 }
 
+.wishlist-filter {
+    border: none;
+}
+
 .wishlist-sort p,
-.wishlist-filter p {
+.wishlist-filter legend {
     font-family: Manrope;
     font-weight: 600;
     font-size: 20px;
@@ -139,7 +143,7 @@
 .reserved-gifts-counter {
     display: flex;
     gap: 5px;
-    align-items: end;
+    align-items: flex-end;
     align-self: flex-end;
 }
 
@@ -160,7 +164,7 @@
     width: 100%;
 }
 
-.priority {
+.gift-priority {
     box-shadow: 0px 0px 10px 3px rgb(255, 207, 104, 0.5);
 }
 
@@ -182,13 +186,13 @@
 .gift-header {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .gift-header-actions {
     display: flex;
     gap: 13px;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .gift-comment {
@@ -233,7 +237,7 @@
 
 .gift-reservation-mark {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 5px;
 }
 
@@ -315,7 +319,7 @@
         align-items: center;
     }
 
-    .wishlist-page-header-row {
+    .wishlist-title-bar {
         flex-direction: column;
         gap: 20px;
         align-items: center;

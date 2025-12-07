@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Друзья</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/friends.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="images/header-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/header-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
+            </div>
+            <div class="header-controls">
+                <button class="button-icon" type="button">
+                    <img src="images/dark-theme-icon.svg" alt="Смена темы" class="light-theme-icon">
+                    <img src="images/light-theme-icon.svg" alt="Смена темы" class="dark-theme-icon">
+                </button>
+                <nav class="menu">
+                    <button type="button">
+                        <img src="images/default-avatar.svg" alt="Меню профиля" class="light-theme-icon">
+                        <img src="images/default-avatar-dark-theme.svg" alt="Меню профиля" class="dark-theme-icon">
+                    </button>
+                    <div class="dropdown">
+                        <a href="profile.html" class="dropdown-item">Профиль</a>
+                        <a href="my-wishlists.html" class="dropdown-item">Мои вишлисты</a>
+                        <a href="notifications.html" class="dropdown-item">Уведомления</a>
+                        <a href="friend-list.html" class="dropdown-item">Друзья</a>
+                        <a href="reserved-gifts.html" class="dropdown-item">Забронированные подарки</a>
+                        <div class="dropdown-divider"></div>   
+                        <a href="/" class="dropdown-item">Выход</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="friends-page">
+            <div class="wrapper">
+                <div class="friends-header">
+                    <h1 class="large-headline">Друзья</h1>
+                    <div class="friends-header-controls">
+                        <div class="tabs">
+                            <button class="tab active" type="button" data-target="my-friends">Мои друзья</button>
+                            <button class="tab" type="button" data-target="friend-requests">Заявки</button>
+                        </div>
+                        <button type="button" class="button button-accent">Добавить друга</button>
+                    </div>
+                </div>
+                <div class="tab-content active" id="my-friends">
+                    <div class="friends-cards">
+                        <div class="friends-cards-item box">
+                            <div class="friend-info">
+                                <a href="#" class="overlay-link"></a>
+                                <img src="images/default-avatar.svg" alt="Изображение профиля" class="light-theme-icon">
+                                <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
+                                <p>Олег</p>
+                            </div>
+                            <button class="button-icon" type="button">
+                                <img src="images/trash-can-icon.svg" alt="Удалить" class="light-theme-icon">
+                                <img src="images/trash-can-icon-dark-theme.svg" alt="Удалить" class="dark-theme-icon">
+                            </button>
+                        </div>
+                        <div class="friends-cards-item box">
+                            <div class="friend-info">
+                                <a href="#" class="overlay-link"></a>
+                                <img src="images/default-avatar.svg" alt="Изображение профиля" class="light-theme-icon">
+                                <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
+                                <p>Алиса</p>
+                            </div>
+                            <button class="button-icon" type="button">
+                                <img src="images/trash-can-icon.svg" alt="Удалить" class="light-theme-icon">
+                                <img src="images/trash-can-icon-dark-theme.svg" alt="Удалить" class="dark-theme-icon">
+                            </button>
+                        </div>
+                        <div class="friends-cards-item box">
+                            <div class="friend-info">
+                                <a href="#" class="overlay-link"></a>
+                                <img src="images/default-avatar.svg" alt="Изображение профиля" class="light-theme-icon">
+                                <img src="images/default-avatar-dark-theme.svg" alt="Изображение профиля" class="dark-theme-icon">
+                                <p>Даша</p>
+                            </div>
+                            <button class="button-icon" type="button">
+                                <img src="images/trash-can-icon.svg" alt="Удалить" class="light-theme-icon">
+                                <img src="images/trash-can-icon-dark-theme.svg" alt="Удалить" class="dark-theme-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="friend-requests">
+                    <p>Список заявок пуст</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-logo">
+                <a href="/">
+                    <img src="images/footer-logo.svg" alt="WishCraft" class="light-theme-icon">
+                    <img src="images/footer-logo-dark-theme.svg" alt="WishCraft" class="dark-theme-icon">
+                </a>
+            </div>
+            <small class="copyright">&copy; WishCraft 2025</small>
+        </div>
+    </footer>
+</body>
+</html>
